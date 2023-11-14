@@ -9,5 +9,3 @@
     "author": "Andamio Team"
 }
 ---
-
-## Content

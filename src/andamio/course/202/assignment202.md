@@ -9,7 +9,3 @@
     "author": "Andamio Team"
 }
 ---
-
-## Your assignment is to...
-
-What might be different on an Assignment page?

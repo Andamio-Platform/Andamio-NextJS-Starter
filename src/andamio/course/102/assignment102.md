@@ -9,11 +9,3 @@
     "author": "Andamio Team"
 }
 ---
-
-- Say hello on Discord
-- Drop by a community meeting
-- Leave a comment on the whitepaper.
-
-Cool! Thanks for taking action.
-
-We're all about project-based learning. We hope that you'll try the rest of this course to see what we mean. In the next module, you will learn about Andamio in the best way we know how: by doing it.
