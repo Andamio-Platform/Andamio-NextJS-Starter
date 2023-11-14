@@ -5,7 +5,7 @@
 }
 
 .coursePageContainer h1 {
-  @apply text-3xl my-3 pb-3 border-b border-accent font-bold text-secondary-content
+  @apply text-3xl my-5 font-bold text-secondary-content
 }
 
 .coursePageContainer h2 {
@@ -28,8 +28,16 @@
   @apply py-3 text-secondary-content pl-2 ml-2 list-disc
 }
 
+.coursePageContainer ol {
+  @apply py-3 text-secondary-content pl-2 ml-2 list-decimal
+}
+
 .coursePageContainer li {
   @apply py-1 text-secondary-content pl-2 ml-2
+}
+
+.coursePageContainer a {
+  @apply font-bold hover:text-blue-800
 }
 
 .coursePageContainer table {

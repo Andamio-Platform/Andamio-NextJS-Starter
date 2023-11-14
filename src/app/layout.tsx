@@ -17,7 +17,7 @@ const martel_sans = Martel_Sans({
 const source_code_pro = Source_Code_Pro({
   subsets: ["latin"],
   display: "swap",
-  weight: "400",
+  weight: ["200", "400", "600", "800"],
   variable: "--font-source-code-pro",
 });
 
@@ -31,7 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" data-theme="andamio" className={`${source_code_pro.variable} ${martel_sans.variable}`}>
       <body>
         <Providers>
-          <div className="flex flex-col bg-[#C2C2C9]">
+          <div className="flex flex-col bg-test-1 bg-cover bg-fixed">
             <GlobalNav />
             {children}
           </div>

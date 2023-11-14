@@ -58,11 +58,11 @@ export default function CourseModuleDetailsCard(props: {
           <div className="flex flex-row gap-5 mt-5">
             <div className="tooltip hover:scale-105" data-tip={`Click to view Assignment ${props.courseJSON.id}`}>
               <Link href={`/course/module/${props.courseJSON.id}/assignment${props.courseJSON.id}`}>
-                <Image src="/assignment-primary2-sm.png" width={40} height={40} alt="assignment" />
+                <Image src="/icons/assignment-primary2-sm.png" width={40} height={40} alt="assignment" />
               </Link>
             </div>
             <div className="tooltip hover:scale-105" data-tip="don't trust, verify">
-              <Image src="/validate-primary-sm.png" width={40} height={40} alt="validate" />
+              <Image src="/icons/validate-primary-sm.png" width={40} height={40} alt="validate" />
             </div>
           </div>
           {moduleOnChain && (

@@ -6,19 +6,15 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  // theme: {
-  //   extend: {
-  //     backgroundImage: {
-  //       'gradient-br': 'linear-gradient(to bottom right, rgb(55 65 81), rgb(30 45 45))',
-  //       'gradient-tl': 'linear-gradient(to top left, rgb(55 65 81), rgb(30 45 45))',
-  //     },
-  //   },
-  // },
   theme: {
     extend: {
       fontFamily: {
         sans: ['var(--font-martel-sans)'],
         mono: ['var(--font-source-code-pro)'],
+      },
+      backgroundImage: {
+        'test-1': "url('/bg-test-1.png')",
+        'test-2': "url('/red-rect.png')",
       }
     }
   },
@@ -38,22 +34,6 @@ const config: Config = {
           "accent": "#400406",
           "accent-content": "#D6D7EB",
           "info": "#FFB100",
-          "--rounded-box": "0.2rem",
-          "--rounded-btn": "0.2rem"
-        },
-      },
-      {
-        slay: {
-          "primary": "E6EB59",
-          "primary-content": "#DD65E6",
-          "primary-focus": "#FFFFFF",
-          "secondary": "6BE73E",
-          "secondary-content": "#FF844B",
-          "secondary-focus": "#FFFFFF",
-          "neutral": "#54F1DC", // for lesson content
-          "accent": "#FF844B",
-          "accent-content": "#000000",
-          "info": "#54F1DC",
           "--rounded-box": "0.2rem",
           "--rounded-btn": "0.2rem"
         },
