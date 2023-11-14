@@ -10,7 +10,7 @@ export default async function LearnerListPage() {
   const learnerCardList = await LearnerCardList();
 
   return (
-    <main className="flex flex-col items-center justify-center font-semibold">
+    <main className="flex flex-col font-semibold min-h-screen">
       <div>
         <Suspense fallback={<Loading />}>{learnerCardList}</Suspense>
       </div>

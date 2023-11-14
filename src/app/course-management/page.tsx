@@ -19,24 +19,29 @@ const CourseManagement = async () => {
       <div className="w-full h-screen mx-auto fixed top-0 left-0 bg-[url('/ricardo-gomez-angel-EqUFBrTIdeE-unsplash.jpeg')] z-0" />
 
       <div className="card bg-secondary text-secondary-content shadow-xl p-5 w-5/6 mx-auto opacity-80">
-        <h2 className="text-3xl py-3 border-b">About Andamio Course Management</h2>
+        <h2 className="text-3xl py-3 border-b">
+          About Andamio Course Management
+        </h2>
         <div className="flex flex-row gap-10 w-3/4 mx-auto">
           <Image src="/andamio.png" width={250} height={200} alt="andamio" />
           <div className="flex flex-col my-auto">
             <p className="py-2">
-              In any Andamio Course instance, there are three <span className="font-bold text-primary">roles</span>:
+              In any Andamio Course instance, there are three{" "}
+              <span className="font-bold text-primary">roles</span>:
             </p>
             <p className="py-2">
-              <span className="font-bold text-primary">Learners</span> can commit to Assignments and build an on-chain
-              record of accomplishments.
+              <span className="font-bold text-primary">Learners</span> can
+              commit to Assignments and build an on-chain record of
+              accomplishments.
             </p>
             <p className="py-2">
-              <span className="font-bold text-primary">Course Creators</span> publish content and create on-chain
-              references to Course Modules.
+              <span className="font-bold text-primary">Course Creators</span>{" "}
+              publish content and create on-chain references to Course Modules.
             </p>
             <p className="py-2">
-              <span className="font-bold text-primary">Course Deciders</span> review evidence of learning and approve
-              the completion of Assignments.
+              <span className="font-bold text-primary">Course Deciders</span>{" "}
+              review evidence of learning and approve the completion of
+              Assignments.
             </p>
           </div>
         </div>
@@ -52,44 +57,68 @@ const CourseManagement = async () => {
           <header className="text-2xl text-info py-2">Learners</header>
           <ul className="text-sm uppercase">
             <li className="py-1">
-              <Link href="/course-management/roles/learner/mint">Mint a Learner Token</Link>
+              <Link href="/course-management/roles/learner/mint">
+                Mint a Learner Token
+              </Link>
             </li>
             <li className="py-1">
-              <Link href="/course-management/module-list">Commit to a Module Assignment</Link>
+              <Link href="/course-management/module-list">
+                Commit to a Module Assignment
+              </Link>
             </li>
             <li className="py-1">
-              <Link href="/course-management/roles/learner/dashboard">Submit Assignment</Link>
+              <Link href="/course-management/roles/learner/dashboard">
+                Submit Assignment
+              </Link>
             </li>
             <li className="py-1">
-              <Link href="/course-management/roles/learner/dashboard">Update Your Learner Token</Link>
+              <Link href="/course-management/roles/learner/dashboard">
+                Update Your Learner Token
+              </Link>
             </li>
           </ul>
         </div>
         <div className="col-span-2">
-          <header className="text-2xl text-info py-2">Course Facilitators</header>
+          <header className="text-2xl text-info py-2">
+            Course Facilitators
+          </header>
           <ul className="text-sm uppercase">
             <li className="py-1">
-              <Link href="/course-management/assignment-commitments">Accept an Assignment</Link>
+              <Link href="/course-management/assignment-commitments">
+                Accept an Assignment
+              </Link>
             </li>
             <li className="py-1">
-              <Link href="/course-management/assignment-commitments">Deny an Assignment</Link>
+              <Link href="/course-management/assignment-commitments">
+                Deny an Assignment
+              </Link>
             </li>
           </ul>
         </div>
-        <div className="col-span-2">
-          <header className="text-2xl text-info py-2">Course Creators</header>
-          <ul className="text-sm uppercase">
-            <li className="py-1">
-              <Link href="/course-management/roles/course-creator/dashboard">Mint a Course Module</Link>
-            </li>
-            <li className="py-1">
-              <Link href="/course-management/roles/course-creator/dashboard">Update a Course Module</Link>
-            </li>
-            <li className="py-1">
-              <Link href="/course-management/roles/course-creator/dashboard">Burn a Course Module</Link>
-            </li>
-          </ul>
-        </div>
+        {process.env.NEXT_PUBLIC_EXPERIMENTAL_FEATURES?.split(",").includes(
+          "cm"
+        ) && (
+          <div className="col-span-2">
+            <header className="text-2xl text-info py-2">Course Creators</header>
+            <ul className="text-sm uppercase">
+              <li className="py-1">
+                <Link href="/course-management/roles/course-creator/dashboard">
+                  Mint a Course Module
+                </Link>
+              </li>
+              <li className="py-1">
+                <Link href="/course-management/roles/course-creator/dashboard">
+                  Update a Course Module
+                </Link>
+              </li>
+              <li className="py-1">
+                <Link href="/course-management/roles/course-creator/dashboard">
+                  Burn a Course Module
+                </Link>
+              </li>
+            </ul>
+          </div>
+        )}
       </div>
     </main>
   );

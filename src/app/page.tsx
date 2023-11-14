@@ -10,7 +10,7 @@ const features = [
   },
   {
     name: "Course Management",
-    description: "Publish Lessons and Assignments, track progress of everyone participating in your course..",
+    description: "Publish Lessons and Assignments, track progress of everyone participating in your course.",
   },
   {
     name: "Contribution Management",
