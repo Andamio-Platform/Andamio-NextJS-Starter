@@ -1,0 +1,49 @@
+/* FIX ME */
+
+.coursePageContainer {
+  @apply pb-5
+}
+
+.coursePageContainer h1 {
+  @apply text-3xl my-3 pb-3 border-b border-accent font-bold text-secondary-content
+}
+
+.coursePageContainer h2 {
+  @apply text-2xl my-3 pb-3 border-b border-accent text-secondary-content tracking-wide
+}
+
+.coursePageContainer h3 {
+  @apply text-xl my-2 text-secondary-content tracking-wide
+}
+
+.coursePageContainer h4 {
+  @apply text-lg my-2 text-secondary-content font-bold tracking-wide
+}
+
+.coursePageContainer p {
+  @apply py-3 text-secondary-content
+}
+
+.coursePageContainer ul {
+  @apply py-3 text-secondary-content pl-2 ml-2 list-disc
+}
+
+.coursePageContainer li {
+  @apply py-1 text-secondary-content pl-2 ml-2
+}
+
+.coursePageContainer table {
+  @apply border border-accent
+}
+
+.coursePageContainer th {
+  @apply border border-accent p-2
+}
+
+.coursePageContainer td {
+  @apply border border-accent p-2
+}
+
+.coursePageContainer .slt {
+  @apply bg-primary text-primary-content font-bold text-lg mb-3 p-3 align-middle
+}
