@@ -10,8 +10,12 @@
 }
 ---
 
-The best way to learn about Andamio is by using it. In this Module, we'll show you how Learners interact with Andamio.
+The best way to learn about Andamio is by using it. In this Module, you will see how **Learners** interact with Andamio.
 
-You will need a Cardano Browser wallet installed. (Tutorial here. Included testnet and collateral.)
+You will need a Cardano Browser wallet (like [Nami](https://namiwallet.io/) or [Eternl](https://eternl.io/app/mainnet/welcome)) installed. You will also need to connect your wallet to the [Cardano Preproduction Testnet](https://github.com/cardano-foundation/developer-portal/blob/staging/docs/get-started/testnets-and-devnets.md), and get some "Test Ada" from the [Cardano Testnets Faucet](https://docs.cardano.org/cardano-testnet/tools/faucet/).
 
-It takes about 30 minutes to complete this module. When you're done, you'll be using a cutting edge decentralized application on Cardano's Preproduction Testnet.
+If you have never taken these steps before, learn more at the following links:
+1. [Connect a Wallet to Cardano Preproduction Testnet](https://plutuspbl.io/modules/100/1001)
+2. [Get Test Ada from Faucet](https://plutuspbl.io/modules/100/1002)
+
+It takes about 30 minutes to complete this module. When you're done, you'll be using Andamio on Cardano's Preproduction Testnet.
