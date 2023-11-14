@@ -11,27 +11,27 @@ const AssignmentCommitmentsTable = async () => {
   const AssignmentInfo = await queryAssignmentValidatorInfo(andamioConfig);
   return (
     <tbody>
-      <table className="w-full border-collapse border border-gray-400 text-left">
+      <table className="table">
         <thead>
-          <tr className="bg-gray-800 text-white">
-            <th className="px-6 py-3">#</th>
-            <th className="px-6 py-3">Learner Token</th>
-            <th className="px-6 py-3">Module Id</th>
-            <th className="px-6 py-3">Assignment Details</th>
-            <th className="px-6 py-3">Assignment Info Status</th>
-            <th className="px-6 py-3">Student Actions</th>
-            <th className="px-6 py-3">Accept</th>
-            <th className="px-6 py-3">Deny</th>
+          <tr className="text-secondary-content">
+            <th className="">#</th>
+            <th className="">Learner Token</th>
+            <th className="">Module Id</th>
+            <th className="">Assignment Details</th>
+            <th className="">Assignment Info Status</th>
+            <th className="">Student Actions</th>
+            <th className="">Accept</th>
+            <th className="">Deny</th>
           </tr>
         </thead>
         {AssignmentInfo.utxos.map((assignment, index) => (
-          <tr key={index} className={index % 2 === 0 ? "bg-gray-600" : "bg-gray-700"}>
+          <tr key={index}>
             <td className="px-6 py-4">{index + 1}</td>
             <td className="px-6 py-4">{assignment.data?.learnerTokenName}</td>
             <td className="px-6 py-4">{assignment.data?.moduleId}</td>
             <td className="px-6 py-4">{assignment.data?.assignmentName}</td>
             <td className="px-6 py-4">{assignment.data?.studentAssignmentInfo}</td>
-            <td className="px-6 py-4">
+            <td className="flex flex-row gap-5">
               {<StudentRemoveAssignmentModal assignment={assignment} />}
               {<StudentUpdateAssignmentModal assignment={assignment} />}
             </td>

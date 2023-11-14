@@ -41,7 +41,7 @@ const AcceptAssignmentModal = (props: { assignment: AssignmentUTxO }) => {
         <>
           <button
             onClick={openModal}
-            className="btn btn-primary"
+            className="btn btn-primary btn-sm"
             type="button"
           >
             Accept Assignment

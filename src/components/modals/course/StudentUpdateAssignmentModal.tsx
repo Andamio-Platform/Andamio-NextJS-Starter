@@ -21,10 +21,10 @@ const StudentUpdateAssignmentModal = (props: { assignment: AssignmentUTxO }) => 
     <div>
       <button
         onClick={openModal}
-        className="btn btn-primary"
+        className="btn btn-primary btn-sm"
         type="button"
       >
-        Update Assignment Commitment
+        Update
       </button>
       <Modal
         isOpen={isModalOpen}

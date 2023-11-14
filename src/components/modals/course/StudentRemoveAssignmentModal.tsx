@@ -21,10 +21,10 @@ const StudentRemoveAssignmentModal = (props: { assignment: AssignmentUTxO }) => 
     <div>
       <button
         onClick={openModal}
-        className="btn btn-primary"
+        className="btn btn-primary btn-sm"
         type="button"
       >
-        Remove Assignment Commitment
+        Remove
       </button>
       <Modal
         isOpen={isModalOpen}
