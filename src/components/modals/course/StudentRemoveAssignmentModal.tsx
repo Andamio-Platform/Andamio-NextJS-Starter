@@ -21,7 +21,7 @@ const StudentRemoveAssignmentModal = (props: { assignment: AssignmentUTxO }) => 
     <div>
       <button
         onClick={openModal}
-        className="btn btn-primary btn-sm"
+        className="btn btn-error btn-sm"
         type="button"
       >
         Remove

@@ -8,7 +8,7 @@ import MintLearnerTokenModal from "../../components/modals/course/MintLearnerTok
 const LearnerReferenceInfo = async () => {
   const LearnerReferenceInfo = await queryLearnerReferenceInfo(andamioConfig);
   return (
-    <div className="card bg-secondary my-5 p-5 grid grid-cols-4 gap-5 content-center w-3/4 mx-auto opacity-90">
+    <div className="card bg-secondary my-5 p-5 grid grid-cols-4 gap-5 content-center w-3/4 mx-auto border border-primary ">
       <div className="col-span-3 prose text-secondary-content my-auto">
         <h2 className="text-6xl pt-5 text-secondary-content">Learner Token</h2>
         <p>

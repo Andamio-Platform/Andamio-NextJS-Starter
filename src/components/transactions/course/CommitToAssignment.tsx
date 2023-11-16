@@ -60,7 +60,7 @@ const CommitToAssignment = (props: { selectedModuleUTxO: CourseReferenceUTxO; cl
               </form>
             </div>
             {studentAssignmentInfo.length > 7 && studentAssignmentInfo.length < 57 ? (
-              <button className="btn btn-success" onClick={handleClick}>
+              <button className="btn btn-sm btn-success" onClick={handleClick}>
                 Confirm Your Commitment to Module {props.selectedModuleUTxO.data?.moduleId}
               </button>
             ) : (

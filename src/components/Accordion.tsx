@@ -49,7 +49,7 @@ export default function Accordion({
                   >
                     <div
                       key={page.title}
-                      className={`pl-5 pr-2 py-2 text-m font-medium hover:pl-6 ${
+                      className={`pl-5 pr-2 py-2 text-m font-medium hover:pl-6 hover:text-info ${
                         path.includes(`/course/module/${moduleId}/${page.slug}`)
                           ? 'bg-primary-focus text-primary-content font-bold pointer-events-none'
                           : ''

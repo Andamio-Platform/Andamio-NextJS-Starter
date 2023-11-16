@@ -38,11 +38,11 @@ const UpdateAssignmentDatum = (props: {
       <>
         {txHash !== "" ? <SuccessTxModal txHash={txHash} closeModal={props.closeModal} /> : null}
         {errorMessage !== "" ? <ErrorModal errorMessage={errorMessage} closeModal={props.closeModal} /> : null}
-        <div className="flex flex-col py-10 items-center bg-gradient-br w-max p-24">
+        <div className="flex flex-col py-10 items-center mx-auto p-24">
           <h3 className="py-3">Selected Module</h3>
-          <p className="py-3">{props.selectedModuleUTxO.datum.fields[0]}</p>
-          <p className="py-3">{props.newLearnerCS}</p>
-          <button className="button-1" onClick={handleClick}>
+          <p className="py-3 font-mono">{props.selectedModuleUTxO.datum.fields[0]}</p>
+          <p className="py-3 font-mono">{props.newLearnerCS}</p>
+          <button className="btn btn-sm btn-success" onClick={handleClick}>
             Confirm Module Update Tx
           </button>
         </div>

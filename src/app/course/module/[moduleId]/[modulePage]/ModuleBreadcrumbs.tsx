@@ -7,10 +7,9 @@ export default function ModuleBreadcrumbs({
   moduleId,
   frontmatter,
 }: {
-  moduleId: string;
-  frontmatter: LMSObjectMetadata;
+  moduleId: string | undefined;
+  frontmatter: LMSObjectMetadata | undefined;
 }) {
-  const moduleTitle = getModuleTitle({ moduleId });
 
   return (
     <div className="card bg-secondary text-secondary-content shadow-xl px-4 py-2 font-mono">
@@ -21,17 +20,26 @@ export default function ModuleBreadcrumbs({
               {andamioConfig.title}
             </Link>
           </li>
-          <li>
-            <Link href={`/course/module/${moduleId}`} className={`btn btn-sm text-sm uppercase ${frontmatter.type == "ModuleOverview" ? 'btn-success' : 'btn-info' }`}>
-              Module {moduleId}: {moduleTitle}
-            </Link>
-          </li>
-          {frontmatter.type != "ModuleOverview" && (
-            <li>
-              <Link href={`#`} className="btn btn-sm btn-success text-sm uppercase">
-                {frontmatter.title}
-              </Link>
-            </li>
+          {moduleId && frontmatter && (
+            <>
+              <li>
+                <Link
+                  href={`/course/module/${moduleId}`}
+                  className={`btn btn-sm text-sm uppercase ${
+                    frontmatter.type == "ModuleOverview" ? "btn-success" : "btn-info"
+                  }`}
+                >
+                  Module {moduleId}: {getModuleTitle({ moduleId })}
+                </Link>
+              </li>
+              {frontmatter.type != "ModuleOverview" && (
+                <li>
+                  <Link href={`#`} className="btn btn-sm btn-success text-sm uppercase">
+                    {frontmatter.title}
+                  </Link>
+                </li>
+              )}
+            </>
           )}
         </ul>
       </div>

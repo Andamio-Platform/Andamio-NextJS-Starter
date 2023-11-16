@@ -40,8 +40,8 @@ const BurnLearnerReferenceTokensModal = (props: { learnerReferenceUTxO: LearnerR
     <div>
       {connectedLearner && (
         <>
-          <button onClick={openModal} className="btn btn-primary" type="button">
-            Burn Your Learner Tokens
+          <button onClick={openModal} className="btn btn-error btn-sm my-2" type="button">
+            Burn Your Learner Token
           </button>
           <Modal
             isOpen={isModalOpen}

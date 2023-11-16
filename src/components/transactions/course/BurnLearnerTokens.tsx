@@ -35,7 +35,7 @@ const BurnLearnerTokens = (props: { learnerReferenceUTxO: LearnerReferenceUTxO; 
         <div className="flex flex-col p-10 w-max">
           <div className="mb-4 text-lg">You will burn your learner token and the reference token.</div>
 
-          <button onClick={handleClick} className="btn btn-warning">
+          <button onClick={handleClick} className="btn btn-sm btn-info">
             Confirm Burn Learner Tokens
           </button>
         </div>

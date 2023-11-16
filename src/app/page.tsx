@@ -19,7 +19,7 @@ const features = [
   },
   {
     name: "Organization Development",
-    description: "Gain insights into what's working best in your organization and where there is room to improve..",
+    description: "Gain insights into what's working best in your organization and where there is room to improve.",
   },
 ];
 

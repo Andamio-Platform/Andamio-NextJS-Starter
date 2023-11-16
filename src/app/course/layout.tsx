@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import Sidebar from "../../components/Sidebar";
 import Loading from "../Loading";
+import ModuleBreadcrumbs from "./module/[moduleId]/[modulePage]/ModuleBreadcrumbs";
 
 export const metadata: Metadata = {
   title: "Andamio PBL Course",
@@ -21,7 +22,9 @@ export default async function CourseLayout({ children }: { children: React.React
             <div>{SideBar}</div>
           </Suspense>
         </div>
-        <div className="col-span-7 md:col-span-8 lg:col-span-8 px-5">{children}</div>
+        <div className="col-span-7 md:col-span-8 lg:col-span-8 px-5">
+          {children}
+        </div>
         {/* <div className="card col-span-2 bg-neutral mr-5 opacity-50">
 
       </div> */}

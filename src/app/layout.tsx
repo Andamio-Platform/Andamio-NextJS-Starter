@@ -6,6 +6,7 @@ import Providers from "./Providers";
 import GlobalNav from "../components/ui/GlobalNav";
 
 import { Source_Code_Pro, Martel_Sans } from "next/font/google";
+import GlobalFooter from "../components/ui/GlobalFooter";
 
 const martel_sans = Martel_Sans({
   subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="flex flex-col bg-test-1 bg-cover bg-fixed">
             <GlobalNav />
             {children}
+            <GlobalFooter />
           </div>
         </Providers>
       </body>

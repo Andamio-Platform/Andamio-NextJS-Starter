@@ -41,10 +41,10 @@ const DenyAssignmentModal = (props: { assignment: AssignmentUTxO }) => {
         <>
           <button
             onClick={openModal}
-            className="btn btn-primary btn-sm"
+            className="btn btn-error btn-sm"
             type="button"
           >
-            Deny Assignment
+            Deny
           </button>
           <Modal
             isOpen={isModalOpen}

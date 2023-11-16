@@ -37,7 +37,7 @@ const BurnCourseModuleToken = (props: { selectedModuleUTxO: CourseReferenceUTxO;
 
           <button
             onClick={handleClick}
-            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-fit mt-6"
+            className="btn btn-sm btn-sm"
             type="button"
           >
             Confirm Burn Module Token

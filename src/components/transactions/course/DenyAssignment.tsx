@@ -31,7 +31,7 @@ const DenyAssignment = (props: { assignment: AssignmentUTxO; closeModal: () => v
         {txHash !== "" ? <SuccessTxModal txHash={txHash} closeModal={props.closeModal} /> : null}
         {errorMessage !== "" ? <ErrorModal errorMessage={errorMessage} closeModal={props.closeModal} /> : null}
         <h1 className="p-5">Assignment: {hexToString(props.assignment.datum.fields[0])}</h1>
-        <button className="button-1" onClick={handleClick}>
+        <button className="btn btn-sm btn-info" onClick={handleClick}>
           Deny Student Input on Assignment {props.assignment.datum.fields[0]}
         </button>
       </div>

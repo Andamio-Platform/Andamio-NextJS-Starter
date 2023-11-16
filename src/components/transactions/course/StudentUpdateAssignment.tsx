@@ -44,10 +44,10 @@ const StudentUpdateAssignment = (props: { assignment: AssignmentUTxO; closeModal
       <>
         {txHash !== "" ? <SuccessTxModal txHash={txHash} closeModal={props.closeModal} /> : null}
         {errorMessage !== "" ? <ErrorModal errorMessage={errorMessage} closeModal={props.closeModal} /> : null}
-        <div className="flex flex-col p-10 w-max">
+        <div className="flex flex-col p-10 mx-auto">
           <div className="mb-4 text-lg">Assignment: {hexToString(props.assignment.datum.fields[0])}</div>
-          <div className="font-extrabold mb-4 text-xl">Enter New Assignment Info</div>
-          <div>
+          <div className="font-extrabold mb-3 text-xl">Enter New Assignment Info</div>
+          <div className="mb-5">
             <form>
               <input
                 type="text"
@@ -58,9 +58,13 @@ const StudentUpdateAssignment = (props: { assignment: AssignmentUTxO; closeModal
               />
             </form>
           </div>
-          <button className="btn btn-success" onClick={handleClick}>
-            Confirm Update Assignment Info
-          </button>
+          {studentAssignmentInfo.length > 7 && studentAssignmentInfo.length < 57 ? (
+            <button className="btn btn-success btn-sm" onClick={handleClick}>
+              Confirm Update Assignment Info
+            </button>
+          ) : (
+            <div className="font-mono text-info text-sm uppercase">String must be 8-56 characters</div>
+          )}
         </div>
       </>
     );

@@ -14,7 +14,6 @@ const config: Config = {
       },
       backgroundImage: {
         'test-1': "url('/bg-test-1.png')",
-        'test-2': "url('/red-rect.png')",
       }
     }
   },

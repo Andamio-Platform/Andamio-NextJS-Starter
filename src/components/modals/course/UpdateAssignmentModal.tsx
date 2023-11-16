@@ -46,7 +46,7 @@ const UpdateAssignmentModal = (props: { selectedModuleUTxO: CourseReferenceUTxO;
             className="btn btn-primary"
             type="button"
           >
-            Update the Assignment
+            Update Assignment
           </button>
           <Modal
             isOpen={isModalOpen}

@@ -29,7 +29,7 @@ const StudentRemoveAssignment = (props: { assignment: AssignmentUTxO; closeModal
       <>
         {txHash !== "" ? <SuccessTxModal txHash={txHash} closeModal={props.closeModal} /> : null}
         {errorMessage !== "" ? <ErrorModal errorMessage={errorMessage} closeModal={props.closeModal} /> : null}
-        <div className="flex flex-col p-10 w-max">
+        <div className="flex flex-col p-10 mx-auto">
           <div className="mb-4 text-lg">Assignment: {hexToString(props.assignment.datum.fields[0])}</div>
           <button className="btn btn-warning" onClick={handleClick}>
             Confirm Tranasaction

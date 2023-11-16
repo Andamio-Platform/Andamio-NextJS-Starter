@@ -41,7 +41,7 @@ const UpdateLearnerDatumModal = (props: { learnerReferenceUTxO: LearnerReference
         <>
           <button
             onClick={openModal}
-            className="btn btn-primary"
+            className="btn btn-info btn-sm"
             type="button"
           >
             Update my Learner Info
