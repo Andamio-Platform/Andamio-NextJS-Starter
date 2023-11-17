@@ -1,8 +1,4 @@
 {
-  "learnerPolicyID": "992c4907edfe759646360fcc85bcb6d55cee7b79feb7c0a9cdfc8d56",
-  "moduleTokenPolicyID": "daf1ea5386fa6928dd76b31e73f487e1c16283f78f8bfac99ff2f95c",
-  "courseCreatorPolicyID": "d97c0326941952cce23e31b954aa4d6ce494e3510ed04291e55ecaa0",
-  "courseDeciderPolicyID": "bc0e5d6bba89ce8beb861c4872645bdf60bde3b14d1d3ad032864b37",
   "contributorPolicyID": "f3e6f19d47103fc04f794ca1eaa786171f00446cb8c9a5a6939fe8a1",
   "adminAsset": "3ef6cc35883f162e7ab1e96f633958a8cb42c8fd33ad2e8d9634019a61646d696e312d6e6674",
   "adminPolicyID": "3ef6cc35883f162e7ab1e96f633958a8cb42c8fd33ad2e8d9634019a",
