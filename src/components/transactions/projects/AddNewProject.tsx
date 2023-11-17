@@ -106,12 +106,12 @@ const AddNewProject = (props: { closeModal: () => void }) => {
                       className="bg-slate-700 p-2 rounded-md font-extrabold"
                     >
                       <option value="">Choose One</option>
-                      {andamioConfig.escrows.map((escrow) => {
+                      {andamioConfig.config.escrows.map((escrow) => {
                         return (
                           <option
                             key={escrow.contractTokenName}
                             value={
-                              andamioConfig.tokens.contractTokenPolicyID +
+                              andamioConfig.config.projectManagementTokens.contractTokenPolicyID +
                               escrow.contractTokenName
                             }
                           >

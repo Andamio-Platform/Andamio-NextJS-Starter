@@ -17,7 +17,7 @@ const UpdateAssignmentModal = (props: { selectedModuleUTxO: CourseReferenceUTxO;
   useEffect(() => {
     async function getCourseCreator() {
       if (connected) {
-        const _res = await getConnectedTokenAsset(wallet, andamioConfig.tokens.courseCreatorPolicyID);
+        const _res = await getConnectedTokenAsset(wallet, andamioConfig.config.courseManagementTokens.courseCreatorPolicyID);
         if (_res) {
           setConnectedCourseCreator(_res);
         }

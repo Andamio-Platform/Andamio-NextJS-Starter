@@ -17,7 +17,7 @@ const DenyAssignmentModal = (props: { assignment: AssignmentUTxO }) => {
   useEffect(() => {
     async function getDeciderToken() {
       if (connected) {
-        const _res = await getConnectedTokenAsset(wallet, andamioConfig.tokens.courseDeciderPolicyID);
+        const _res = await getConnectedTokenAsset(wallet, andamioConfig.config.courseManagementTokens.courseDeciderPolicyID);
         setConnectedDecider(_res);
       }
     }

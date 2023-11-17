@@ -20,7 +20,7 @@ export default function ViewLearnerTokenData() {
 
   useEffect(() => {
     async function getLearnerToken() {
-      const token = await getConnectedTokenAsset(wallet, andamioConfig.tokens.learnerPolicyID);
+      const token = await getConnectedTokenAsset(wallet, andamioConfig.config.courseManagementTokens.learnerPolicyID);
       if (token) {
         setConnectedLearnerToken(token.unit);
       }

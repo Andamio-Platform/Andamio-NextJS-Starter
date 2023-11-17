@@ -16,7 +16,7 @@ const EscrowInfo = cache(async (contractToken?: string) => {
   }
   return (
     <>
-      {contractToken? null: <DataBox value={andamioConfig.escrows.length} label="Escrows" />}
+      {contractToken? null: <DataBox value={andamioConfig.config.escrows.length} label="Escrows" />}
       <DataBox value={EscrowInfo.numLiveCommitments} label="Live Commitments" />
       <DataBox
         value={EscrowInfo.lovelaceInCommitment / 1000000}

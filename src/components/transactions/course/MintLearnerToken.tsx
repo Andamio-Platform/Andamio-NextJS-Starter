@@ -19,12 +19,12 @@ const MintLearnerToken = (props: { closeModal: () => void }) => {
   if (connected) {
     const handleClick = async () => {
       try {
-        if (andamioConfig.nftArtwork?.learnerNFTURL) {
+        if (andamioConfig.config.coursemanagementNftArtwork?.learnerNFTURL) {
           const MINT_LEARNER_TOKEN_TX = await prepareMintLearnerTokenTx(
             wallet,
             andamioConfig,
             tokenAlias,
-            andamioConfig.nftArtwork?.learnerNFTURL
+            andamioConfig.config.coursemanagementNftArtwork?.learnerNFTURL
           );
           const res = await MINT_LEARNER_TOKEN_TX.runTx();
           setTxHash(res);

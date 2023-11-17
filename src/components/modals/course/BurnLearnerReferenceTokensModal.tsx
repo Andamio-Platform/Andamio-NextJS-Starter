@@ -18,7 +18,7 @@ const BurnLearnerReferenceTokensModal = (props: { learnerReferenceUTxO: LearnerR
   useEffect(() => {
     async function getLearnerToken() {
       if (connected) {
-        const _res = await getConnectedTokenAsset(wallet, andamioConfig.tokens.learnerPolicyID);
+        const _res = await getConnectedTokenAsset(wallet, andamioConfig.config.courseManagementTokens.learnerPolicyID);
         setConnectedLearner(_res);
       }
     }

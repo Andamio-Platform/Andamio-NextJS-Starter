@@ -31,7 +31,7 @@ const SelectEscrowModal = () => {
 function ListOfEscrow() {
   return (
     <>
-      {andamioConfig.escrows.map((escrow) => (
+      {andamioConfig.config.escrows.map((escrow) => (
         <Link
           key={escrow.contractTokenName}
           href={`/contributor-platform/escrow/${escrow.contractTokenName}`}

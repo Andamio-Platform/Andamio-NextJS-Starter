@@ -17,7 +17,7 @@ export default cache(async function EscrowStat({
     <div className="flex flex-col py-10 items-center bg-gradient-tl mt-1 w-3/4 mx-auto">
       <div className="font-extrabold text-4xl mb-8">
         {
-          andamioConfig.escrows.find(
+          andamioConfig.config.escrows.find(
             (escrow) => escrow.contractTokenName === params.contractToken
           )?.name.toUpperCase()
         }
