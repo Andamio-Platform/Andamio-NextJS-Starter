@@ -19,11 +19,18 @@ const GlobalNav = () => (
           <Link href={"/course"}>{`Start ${andamioConfig.title} Course`}</Link>
         </li>
         <li>
+          <Link href={"/course-management/roles/learner/dashboard"}>Learner Dashboard</Link>
+        </li>
+        {process.env.NEXT_PUBLIC_EXPERIMENTAL_FEATURES?.split(",").includes("cm") && (
+        <li>
           <Link href={"/course-management"}>Course Management</Link>
         </li>
+        )}
+        {process.env.NEXT_PUBLIC_EXPERIMENTAL_FEATURES?.split(",").includes("pm") && (
         <li>
           <Link href={"/contributor-platform"}>Contributor Platform</Link>
         </li>
+        )}
       </ul>
       <div className="ml-5">
       <CardanoWallet />
