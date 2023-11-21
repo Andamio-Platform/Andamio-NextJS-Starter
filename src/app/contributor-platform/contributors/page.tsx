@@ -1,63 +1,18 @@
-import {
-  escrowByContractToken,
-  hexToString,
-  posixToDateString,
-  queryContribRefInfo,
-  queryEscrowsInfo,
-  queryTreasuryInfo,
-} from "@andamiojs/core";
 import { Suspense } from "react";
-import Link from "next/link";
-import { andamioConfig } from "../../../andamio/config";
 import Loading from "../../Loading";
-import { cache } from 'react'
+import ContributorTable from "./ContributorTable";
 
-export const revalidate = 30 // revalidate the data at most every 30s
-
-const ContributorsTable = cache(async () => {
-  const ContribRefInfo = await queryContribRefInfo(andamioConfig);
-  return (
-    <tbody>
-      {ContribRefInfo.data.map((contrib, index) => {
-        return (
-          <tr
-            key={index}
-            className={index % 2 === 0 ? "bg-gray-600" : "bg-gray-700"}
-          >
-            <th className="px-6 py-4">{index + 1}</th>
-            <td className="px-6 py-4">
-              {hexToString(contrib.contributorRefAssetId.slice(56))}
-            </td>
-            <td className="px-6 py-4">{contrib.rewardAddress}</td>
-            <td className="px-6 py-4">{contrib.numCompletedProjects}</td>
-          </tr>
-        );
-      })}
-    </tbody>
-  );
-});
+export const dynamic = "force-dynamic";
 
 export default async function Contributors() {
-  const projectsTable = await ContributorsTable();
+  const contributorTable = await ContributorTable();
   return (
-    <main className="flex flex-col items-center justify-center font-semibold">
-      <div className="mt-20">
-        {
-          <Suspense fallback={<Loading />}>
-            <table className="w-full border-collapse border border-gray-400 mb-40">
-              <thead>
-                <tr className="bg-gray-800 text-white">
-                  <th className="px-6 py-3 text-left">#</th>
-                  <th className="px-6 py-3 text-left">Contributor</th>
-                  <th className="px-6 py-3 text-left">Reward Address</th>
-                  <th className="px-6 py-3 text-left">Completed Commitments</th>
-                </tr>
-              </thead>
-              {projectsTable}
-            </table>
-          </Suspense>
-        }
-      </div>
-    </main>
+    <main className="h-max min-h-screen">
+    <div className="flex flex-col py-10 text-secondary-content w-2/3 mx-auto my-10">
+      <h1 className="py-10 text-secondary-content text-4xl">List of Contributors</h1>
+      <p>WIP: What do you want to be able to do with this list?</p>
+      <Suspense fallback={<Loading />}>{contributorTable}</Suspense>
+    </div>
+  </main>
   );
 }

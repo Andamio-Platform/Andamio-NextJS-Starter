@@ -7,9 +7,9 @@ import Link from "next/link";
 const AssignmentInfo = async () => {
   const AssignmentInfo = await queryAssignmentValidatorInfo(andamioConfig);
   return (
-    <div className="card bg-secondary my-5 p-5 grid grid-cols-4 gap-5 content-center w-3/4 mx-auto border border-primary ">
+    <div className="card bg-secondary my-5 p-5 grid grid-cols-4 gap-5 content-center border border-primary ">
       <div className="col-span-3 prose text-secondary-content my-auto">
-        <h2 className="text-6xl pt-5 text-secondary-content">Course Facilitators</h2>
+        <h2 className="text-3xl pt-5 text-secondary-content">Course Facilitators</h2>
         <p>
           Here is how Assignments work. Anyone can commit and start learning. Deciders look for evidence and distribute
           commitments.
@@ -19,7 +19,7 @@ const AssignmentInfo = async () => {
       <div className="col-span-1 flex flex-col gap-3 p-3">
         <DataBox value={AssignmentInfo.utxos.length} label="Commitments" />
       </div>
-      <div className="col-span-4 flex flex-row justify-between w-full mx-auto">
+      <div className="col-span-4 flex flex-row justify-between w-full mx-auto border-t border-primary pt-5">
         <Link className="btn btn-wide btn-primary mx-auto" href="/course-management/assignment-commitments">
           View Current Commitments
         </Link>

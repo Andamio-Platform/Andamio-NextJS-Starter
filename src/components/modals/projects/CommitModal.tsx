@@ -21,7 +21,7 @@ const CommitModal = (props: {selectedProject: ProjectData}) => {
     <div>
       <button
         onClick={openModal}
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        className="btn btn-success btn-sm"
         type="button"
       >
         Commit

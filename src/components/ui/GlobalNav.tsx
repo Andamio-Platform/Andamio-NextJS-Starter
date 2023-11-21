@@ -9,7 +9,7 @@ const GlobalNav = () => (
   <div className="card bg-primary text-primary-content font-mono shadow-xl mx-5 mt-5 z-10">
     <div className="navbar">
       <div className="flex-1">
-        <Link className="btn btn-ghost normal-case text-xl" href="/">
+        <Link className="btn btn-ghost normal-case text-lg" href="/">
           <Image src="/andamio.png" height={40} width={40} alt="andamio" />
           {andamioConfig.title}
         </Link>

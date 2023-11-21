@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function GlobalFooter() {
   return (
-    <footer className="footer px-24 py-10 bg-primary text-primary-content mt-24">
+    <footer className="footer px-24 py-10 bg-primary text-primary-content mt-12">
       <Image src="/andamio.png" width={150} height={150} alt="andamio" className="rounded-full" />
       <nav>
         <header className="footer-title">Andamio</header>
