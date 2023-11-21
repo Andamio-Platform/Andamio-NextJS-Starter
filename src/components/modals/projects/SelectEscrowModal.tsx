@@ -18,7 +18,7 @@ const SelectEscrowModal = () => {
 
   return (
     <>
-      <button onClick={openModal} className="button-1 p-3 w-fit">Stats of Individual Escows</button>
+      <button onClick={openModal} className="btn btn-success btn-wide">Stats of Individual Escows</button>
       <Modal
         isOpen={isModalOpen}
         closeModal={closeModal}
@@ -35,7 +35,7 @@ function ListOfEscrow() {
         <Link
           key={escrow.contractTokenName}
           href={`/contributor-platform/escrow/${escrow.contractTokenName}`}
-          className="button-1 p-3 w-fit"
+          className="btn btn-success btn-wide"
         >
           {escrow.name.toUpperCase()}
         </Link>

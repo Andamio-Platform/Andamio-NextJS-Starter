@@ -21,7 +21,7 @@ const MintContribTokenModal = () => {
 
   return (
     <div>
-      <button onClick={openModal} className="button-1 p-3 w-fit" type="button">
+      <button onClick={openModal} className="btn btn-success btn-wide" type="button">
         Mint Your Contributor Token Pair
       </button>
       <Modal
