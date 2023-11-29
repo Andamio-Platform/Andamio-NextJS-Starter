@@ -8,6 +8,7 @@ import ErrorModal from "../../modals/ErrorModal";
 const MintContribToken = (props: { closeModal: () => void }) => {
   const [formData, setFormData] = useState({
     tokenAlias: "",
+    contributorAddress: "",
   });
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -27,7 +28,8 @@ const MintContribToken = (props: { closeModal: () => void }) => {
         const MINT_CONTIB_TOKEN_TX = await prepareMintContribTokenTx(
           wallet,
           andamioConfig,
-          formData.tokenAlias
+          formData.tokenAlias,
+          formData.contributorAddress
         );
         const res = await MINT_CONTIB_TOKEN_TX.runTx();
         setTxHash(res);
@@ -41,26 +43,33 @@ const MintContribToken = (props: { closeModal: () => void }) => {
     };
     return (
       <>
-        {txHash !== "" ? (
-          <SuccessTxModal txHash={txHash} closeModal={props.closeModal} />
-        ) : null}
-        {errorMessage !== "" ? (
-          <ErrorModal
-            errorMessage={errorMessage}
-            closeModal={props.closeModal}
-          />
-        ) : null}
+        {txHash !== "" ? <SuccessTxModal txHash={txHash} closeModal={props.closeModal} /> : null}
+        {errorMessage !== "" ? <ErrorModal errorMessage={errorMessage} closeModal={props.closeModal} /> : null}
         <div className="flex flex-col py-10 items-center bg-gradient-br w-max p-24">
-          <div className="font-extrabold mb-4 text-xl">Enter Token Alias</div>
           <div>
             <form>
-              <input
-                type="text"
-                name="tokenAlias"
-                value={formData.tokenAlias}
-                onChange={handleInputChange}
-                className="bg-slate-700 p-2 rounded-md font-extrabold"
-              />
+              <div className="flex flex-col">
+                <div>
+                  <p>Token Alias:</p>
+                  <input
+                    type="text"
+                    name="tokenAlias"
+                    value={formData.tokenAlias}
+                    onChange={handleInputChange}
+                    className="bg-slate-700 p-2 rounded-md font-extrabold"
+                  />
+                </div>
+                <div>
+                  <p>Contributor Address:</p>
+                  <input
+                    type="text"
+                    name="contributorAddress"
+                    value={formData.contributorAddress}
+                    onChange={handleInputChange}
+                    className="bg-slate-700 p-2 rounded-md font-extrabold"
+                  />
+                </div>
+              </div>
             </form>
           </div>
           <button
