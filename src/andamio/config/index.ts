@@ -1,16 +1,21 @@
 import { AndamioConfig, CourseManagementConfig, ProjectManagementConfig } from "@andamiojs/core";
 
 // Project Management
-import { contributorMinter, contributorReference } from "./contributor";
-import { escrows } from "./escrow";
-import { treasury } from "./treasury";
+// import { escrows } from "./escrow";
+
+import treasury from "../cardano/plutus/treasury.json"
+import contributorReference from "../cardano/plutus/contributorReference.json"
+import contributorMintingReference from "../cardano/plutus/contributorMintingReference.json"
+import contractTokenMintingReference from "../cardano/plutus/contractTokenMintingReference.json"
+import escrowDecider1 from "../cardano/plutus/escrowDecider1.json"
+import escrowDecider2 from "../cardano/plutus/escrowDecider2.json"
 
 // Course Management
-import { assignment } from "./assignment";
-import { courseReference } from "./courseReference";
-import { learnerReference } from "./learnerReference";
-import { learnerMintingReference } from "./learnerMintingReference";
-import { moduleMintingReference } from "./moduleMintingReference";
+import assignment from "../cardano/plutus/assignment.json"
+import courseReference from "../cardano/plutus/courseReference.json"
+import learnerReference from "../cardano/plutus/learnerReference.json"
+import learnerMintingReference from "../cardano/plutus/learnerMintingReference.json"
+import moduleMintingReference from "../cardano/plutus/moduleMintingReference.json"
 
 // Tokens
 import courseManagementTokens from './courseManagementTokens.json'
@@ -39,10 +44,11 @@ export const andamioConfig: AndamioConfig<CourseManagementConfig & ProjectManage
       courseCreatorNFTURL: "https://www.andamio.io/andamio.png",
       courseDeciderNFTURL: "https://www.andamio.io/andamio.png",
     },
-    contributorMinter: contributorMinter,
     contributorReference: contributorReference,
-    escrows: escrows,
+    escrows: [escrowDecider1, escrowDecider2],
     treasury: treasury,
+    contractTokenMintingReference: contractTokenMintingReference,
+    contributorMintingReference: contributorMintingReference,
     projectManagementTokens: projectManagementTokens,
   },
 };
