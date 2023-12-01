@@ -10,7 +10,7 @@ const GlobalNav = () => (
     <div className="navbar">
       <div className="flex-1">
         <Link className="btn btn-ghost normal-case text-lg" href="/">
-          <Image src="/andamio.png" height={40} width={40} alt="andamio" />
+          <Image src="/mstile-150x150.png" height={40} width={40} alt="andamio" />
           {andamioConfig.title}
         </Link>
       </div>

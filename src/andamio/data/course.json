@@ -1,158 +1,113 @@
 {
-  "courseTitle": "Andamio Project-Based Learning",
-  "authors": ["Andamio Team"],
-  "modules": [
-    {
-      "id": "101",
-      "title": "How to Learn in Andamio",
-      "slts": [
+    "courseTitle": "Mesh PBL",
+    "authors": [
+        "Mesh and Gimbalabs"
+    ],
+    "modules": [
         {
-          "id": "101.1",
-          "slt": "I can mint an Andamio Learner Token."
+            "id": "100",
+            "title": "Getting Started With MeshJS",
+            "slts": [
+                {
+                    "id": "100.1",
+                    "slt": "I have a Cardano Browser wallet extension installed on my computer."
+                },
+                {
+                    "id": "100.2",
+                    "slt": "I have NodeJS installed on my local computer."
+                },
+                {
+                    "id": "100.3",
+                    "slt": "I am familiar with some essentials of the React framework, like components, props, and hooks."
+                },
+                {
+                    "id": "100.4",
+                    "slt": "I can integrate Mesh into a new Project."
+                }
+            ]
         },
         {
-          "id": "101.2",
-          "slt": "I can commit to an Assignment."
+            "id": "101",
+            "title": "Browser Wallet Integration",
+            "slts": [
+                {
+                    "id": "101.1",
+                    "slt": "I can use Mesh to connect a CIP-30 compliant wallet to a decentralized application."
+                },
+                {
+                    "id": "101.2",
+                    "slt": "I can see information about my wallet in my web browser."
+                },
+                {
+                    "id": "101.3",
+                    "slt": "I can build a component that lists the assets in my browser wallet."
+                }
+            ]
         },
         {
-          "id": "101.3",
-          "slt": "I can see an on-chain record of my completed Assignment."
+            "id": "102",
+            "title": "Mesh React",
+            "slts": [
+                {
+                    "id": "102.1",
+                    "slt": "I can set up Mesh Provider so that I can use Mesh React Components and Hooks."
+                },
+                {
+                    "id": "102.2",
+                    "slt": "I can connect or disconnect wallet using useWallet hook."
+                },
+                {
+                    "id": "102.3",
+                    "slt": "I can get the connected wallet address using useAddress hook."
+                },
+                {
+                    "id": "102.4",
+                    "slt": "I can get a list of assets or tokens in connected wallets using useAssets hook."
+                },
+                {
+                    "id": "102.5",
+                    "slt": "I can get information regarding the amount of ADA in lovelace in the connected wallet using useLovelace hook."
+                },
+                {
+                    "id": "102.6",
+                    "slt": "I can get information about the connected wallet network using useNetwork hook."
+                }
+            ]
+        },
+        {
+            "id": "201",
+            "title": "Transactions",
+            "slts": []
+        },
+        {
+            "id": "202",
+            "title": "Minting",
+            "slts": []
+        },
+        {
+            "id": "203",
+            "title": "Multi-Sig",
+            "slts": []
+        },
+        {
+            "id": "204",
+            "title": "Smart Contract Interactions",
+            "slts": []
+        },
+        {
+            "id": "205",
+            "title": "Staking",
+            "slts": []
+        },
+        {
+            "id": "206",
+            "title": "Wallet Verification and Message Signing",
+            "slts": []
+        },
+        {
+            "id": "207",
+            "title": "App Wallet",
+            "slts": []
         }
-      ]
-    },
-    {
-      "id": "102",
-      "title": "What is Andamio?",
-      "slts": [
-        {
-          "id": "102.1",
-          "slt": "I know the ways that people can participate in Andamio."
-        },
-        {
-          "id": "102.2",
-          "slt": "I know where to learn more about Andamio."
-        },
-        {
-          "id": "102.3",
-          "slt": "I can leave a comment on the Andamio paper."
-        },
-        {
-          "id": "102.4",
-          "slt": "I can participate in the Andamio Community."
-        }
-      ]
-    },
-    {
-      "id": "103",
-      "title": "Contribution and Treasury Management in Andamio",
-      "slts": [
-        {
-          "id": "103.1",
-          "slt": "I can mint a Contributor Token in Andamio."
-        },
-        {
-          "id": "103.2",
-          "slt": "I can commit to a Project in Andamio."
-        },
-        {
-          "id": "103.3",
-          "slt": "I understand how Andamio flexibly combines education, onboarding, and organizational management."
-        }
-      ]
-    },
-    {
-      "id": "201",
-      "title": "How to Teach with Andamio",
-      "slts": [
-        {
-          "id": "201.1",
-          "slt": "I can write a Student Learning Target."
-        },
-        {
-          "id": "201.2",
-          "slt": "I can use potential Assignments to write supporting SLTs."
-        },
-        {
-          "id": "201.3",
-          "slt": "I can organize Student Learning Targets into Course Modules."
-        },
-        {
-          "id": "201.4",
-          "slt": "I can write and publish a PBL Course Contract."
-        }
-      ]
-    },
-    {
-      "id": "202",
-      "title": "Creating PBL Content in Andamio",
-      "slts": [
-        {
-          "id": "202.1",
-          "slt": "I can connect a Lesson to a Student Learning Target."
-        },
-        {
-          "id": "202.2",
-          "slt": "I can write a Lesson in Markdown."
-        },
-        {
-          "id": "202.3",
-          "slt": "I can write an Assignment in Markdown."
-        },
-        {
-          "id": "202.4",
-          "slt": "I can connect Assignments to multiple Student Learning Targets."
-        },
-        {
-          "id": "202.5",
-          "slt": "I can customize my Andamio Instance."
-        }
-      ]
-    },
-    {
-      "id": "203",
-      "title": "Get Ready to Build Your Own Andamio Instance",
-      "slts": [
-        {
-          "id": "203.1",
-          "slt": "I can make a merge request to a project on GitLab."
-        },
-        {
-          "id": "203.2",
-          "slt": "I can fork this Andamio template and use NodeJS to run it on my computer."
-        },
-        {
-          "id": "203.3",
-          "slt": "I can show my Course Outline in my instance of Andamio."
-        }
-      ]
-    },
-    {
-      "id": "204",
-      "title": "How to manage a Treasury with Andamio",
-      "slts": [
-        {
-          "id": "204.1",
-          "slt": "I can initialize an Andamio Treasury instance."
-        },
-        {
-          "id": "204.2",
-          "slt": "I can add Projects and Contributors to an Andamio Treasury Instance."
-        },
-        {
-          "id": "204.3",
-          "slt": "I can fund Projects with Andamio."
-        }
-      ]
-    },
-    {
-      "id": "301",
-      "title": "Connect to the Andamio Network",
-      "slts": [
-        {
-          "id": "301.1",
-          "slt": "I understand how SLTs are used in the Andamio Network."
-        }
-      ]
-    }
-  ]
+    ]
 }

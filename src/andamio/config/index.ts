@@ -1,14 +1,7 @@
 import { AndamioConfig, CourseManagementConfig, ProjectManagementConfig } from "@andamiojs/core";
 
 // Project Management
-// import { escrows } from "./escrow";
-
-import treasury from "../cardano/plutus/treasury.json"
-import contributorReference from "../cardano/plutus/contributorReference.json"
-import contributorMintingReference from "../cardano/plutus/contributorMintingReference.json"
-import contractTokenMintingReference from "../cardano/plutus/contractTokenMintingReference.json"
-import escrowDecider1 from "../cardano/plutus/escrowDecider1.json"
-import escrowDecider2 from "../cardano/plutus/escrowDecider2.json"
+// Not implemented
 
 // Course Management
 import assignment from "../cardano/plutus/assignment.json"
@@ -19,10 +12,9 @@ import moduleMintingReference from "../cardano/plutus/moduleMintingReference.jso
 
 // Tokens
 import courseManagementTokens from './courseManagementTokens.json'
-import projectManagementTokens from './projectManagementTokens.json'
 
-export const andamioConfig: AndamioConfig<CourseManagementConfig & ProjectManagementConfig> = {
-  title: "Andamio PBL",
+export const andamioConfig: AndamioConfig<CourseManagementConfig> = {
+  title: "Mesh PBL",
   baseAddress: "",
   enterpriseAddress: "",
   rewardAddress: "",
@@ -38,17 +30,10 @@ export const andamioConfig: AndamioConfig<CourseManagementConfig & ProjectManage
     moduleMintingReference: moduleMintingReference,
     courseManagementTokens: courseManagementTokens,
     coursemanagementNftArtwork: {
-      // move to a file?
-      learnerNFTURL: "https://www.andamio.io/andamio.png",
+      learnerNFTURL: "ipfs://bafkreidqvxwum45zykyxnkcngdpasvcjwsawmevurd2yzrlziiaukhjdje",
       courseModuleNFTURL: "https://www.andamio.io/andamio.png",
-      courseCreatorNFTURL: "https://www.andamio.io/andamio.png",
-      courseDeciderNFTURL: "https://www.andamio.io/andamio.png",
+      courseCreatorNFTURL: "ipfs://bafkreidly4pye2wiklnxohb76bxeewde3xa66mwms5a7saienzzcccx3wi",
+      courseDeciderNFTURL: "ipfs://bafkreiasvwd3fcmrqpc5mmjhci2rmjg5hptgs46nf7xmmmhv7oz66xkfmu",
     },
-    contributorReference: contributorReference,
-    escrows: [escrowDecider1, escrowDecider2],
-    treasury: treasury,
-    contractTokenMintingReference: contractTokenMintingReference,
-    contributorMintingReference: contributorMintingReference,
-    projectManagementTokens: projectManagementTokens,
   },
 };
