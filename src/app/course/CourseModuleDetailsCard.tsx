@@ -18,8 +18,11 @@ export default function CourseModuleDetailsCard(props: {
   const modulePublished = getPublishedCourseContent(props.courseJSON, props.publishedContent);
 
   return (
-    <div className="card border border-primary bg-secondary text-secondary-content shadow-xl grid grid-cols-3 my-5" key={props.courseJSON.id}>
-      <div className="col-span-2 p-4">
+    <div
+      className="card border border-primary bg-secondary text-secondary-content shadow-xl grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 my-5"
+      key={props.courseJSON.id}
+    >
+      <div className="md:col-span-2 lg:col-span-3 p-4">
         <div className="flex flex-col py-1 justify-between">
           <h5 className="text-accent text-sm font-bold">Module {props.courseJSON.id}</h5>
           <h2 className="w-11/12">{props.courseJSON.title}</h2>
@@ -46,24 +49,25 @@ export default function CourseModuleDetailsCard(props: {
           </ul>
         </div>
       </div>
-      <div className="w-full row-span-2 bg-primary text-primary-content">
+      <div className="w-full col-span-1 row-span-2 bg-primary text-primary-content">
         <div className="p-5">
           <pre className="pb-1 text-sm">Assignment:</pre>
           <pre className="pb-3 text-sm">{getAssignment(props.courseJSON, props.onChainModules)}</pre>
-          {/* <pre className="text-sm">Module Content Hash: {hashCourseModule(props.courseJSON)}</pre>
-          <pre className="text-sm">Module Onchain Hash: {moduleOnChain?.data?.moduleHash}</pre> */}
-          {/* <pre className="text-sm">Module CS: {moduleOnChain?.data?.moduleCS}</pre> */}
 
-          {moduleOnChain && <div className="text-base text-primary-content">This module is live</div>}
-          <div className="flex flex-row gap-5 mt-5">
+          <div className="flex flex-col gap-5 mt-5">
             <div className="tooltip hover:scale-105" data-tip={`Click to view Assignment ${props.courseJSON.id}`}>
               <Link href={`/course/module/${props.courseJSON.id}/assignment${props.courseJSON.id}`}>
-                <Image src="/icons/assignment-primary2-sm.png" width={40} height={40} alt="assignment" />
+                <Image src="/icons/assignment-primary2-sm.png" width={30} height={30} alt="assignment" />
               </Link>
             </div>
-            <div className="tooltip hover:scale-105" data-tip="don't trust, verify">
-              <Image src="/icons/validate-primary-sm.png" width={40} height={40} alt="validate" />
-            </div>
+            <a href="https://andamio.notion.site/Andamio-On-Chain-Course-Modules-3d04a6dc28684f019e75e22ea94ed9b7">
+              <div
+                className="tooltip hover:scale-105"
+                data-tip="You can verify that this Module is deployed on-chain. Click to learn more."
+              >
+                <Image src="/icons/validate-primary-sm.png" width={30} height={30} alt="validate" />
+              </div>
+            </a>
           </div>
           {moduleOnChain && (
             <div className="flex flex-col gap-5">
