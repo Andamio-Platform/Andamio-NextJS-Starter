@@ -15,7 +15,7 @@ export default function CourseManagementIntro() {
           to Course Modules.
         </p>
         <p>
-          <span className="font-bold text-primary">Course Deciders</span> review evidence of learning and approve the
+          <span className="font-bold text-primary">Course Facilitators</span> review evidence of learning and approve the
           completion of Assignments.
         </p>
       </div>

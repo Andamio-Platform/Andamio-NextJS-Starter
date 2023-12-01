@@ -12,10 +12,10 @@ export default function DocumentationLinks() {
             <header className="text-xl text-info py-2">AndamioJS</header>
             <ul className="text-sm uppercase">
               <li className="py-1">
-                <Link href="/course-management/roles/learner/mint">Git Repo</Link>
+                <a href="https://www.npmjs.com/package/@andamiojs/core">NPM Package</a>
               </li>
               <li className="py-1">
-                <Link href="/course-management/module-list">Module API Docs</Link>
+                <a href="https://andamiojs.andamio.io">Andamio JS Docs</a>
               </li>
             </ul>
           </div>
@@ -23,25 +23,25 @@ export default function DocumentationLinks() {
             <header className="text-xl text-info py-2">In Andamio PBL</header>
             <ul className="text-sm uppercase">
               <li className="py-1">
-                <Link href="/course-management/assignment-commitments">Key Module A</Link>
+                <Link href="https://www.andamio.io/course/module/101/overview">Module 101: How to Learn in Andamio</Link>
               </li>
               <li className="py-1">
-                <Link href="/course-management/assignment-commitments">Key Module B</Link>
+                <Link href="https://www.andamio.io/course/module/201/overview">Module 201: How to Teach With Andamio</Link>
               </li>
             </ul>
           </div>
 
           <div className="col-span-1">
-            <header className="text-xl text-info py-2">Inquire</header>
+            <header className="text-xl text-info py-2">Inquire: Coming Soon</header>
             <ul className="text-sm uppercase">
               <li className="py-1">
-                <Link href="/course-management/roles/course-creator/dashboard">Schedule a Consultation</Link>
+                <Link href="#">Schedule a Consultation</Link>
               </li>
               <li className="py-1">
-                <Link href="/course-management/roles/course-creator/dashboard">Join a Public Meeting</Link>
+                <Link href="#">Join a Public Meeting</Link>
               </li>
               <li className="py-1">
-                <Link href="/course-management/roles/course-creator/dashboard">Read Blog</Link>
+                <Link href="#">Read Blog</Link>
               </li>
             </ul>
           </div>

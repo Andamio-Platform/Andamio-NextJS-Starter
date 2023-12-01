@@ -6,7 +6,7 @@ export default function CourseTransactionEndpointList() {
       {process.env.NEXT_PUBLIC_EXPERIMENTAL_FEATURES?.split(",").includes("cm") && (
         <div className="card bg-primary text-primary-content p-10 w-full mx-auto font-mono grid grid-cols-1">
           <div className="col-span-1">
-            <h1 className="pb-5 text-2xl">Transaction Endpoints</h1>
+            <h1 className="pb-5 text-2xl">Andamio Instance Endpoints</h1>
           </div>
           <div className="col-span-1">
             <header className="text-xl text-info py-2">Learners</header>
@@ -41,13 +41,13 @@ export default function CourseTransactionEndpointList() {
             <header className="text-xl text-info py-2">Course Creators</header>
             <ul className="text-sm uppercase">
               <li className="py-1">
-                <Link href="/course-management/roles/course-creator/dashboard">Mint a Course Module</Link>
+                <Link href="/course">Mint a Course Module</Link>
               </li>
               <li className="py-1">
-                <Link href="/course-management/roles/course-creator/dashboard">Update a Course Module</Link>
+                <Link href="/course">Update a Course Module</Link>
               </li>
               <li className="py-1">
-                <Link href="/course-management/roles/course-creator/dashboard">Burn a Course Module</Link>
+                <Link href="/course">Burn a Course Module</Link>
               </li>
             </ul>
           </div>
