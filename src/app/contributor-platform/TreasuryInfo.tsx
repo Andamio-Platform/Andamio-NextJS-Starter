@@ -14,9 +14,8 @@ const TreasuryInfo = async () => {
       <div className="col-span-3 prose text-secondary-content my-auto">
         <h2 className="text-3xl pt-5 text-secondary-content">Andamio Treasury</h2>
         <p>
-          The Andamio Treasury is a governance tool.
+          The Andamio Treasury is a governance tool. Admins and Deciders collaborate to define Projects and specify the evidence required for completion.
         </p>
-        <p>Here is how it works...</p>
       </div>
       <div className="col-span-2 grid grid-cols-1 gap-3">
         <DataBoxWide value={TreasuryInfo.totalLovelace / 1000000} label="Total ADA" />
