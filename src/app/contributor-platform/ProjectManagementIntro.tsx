@@ -7,15 +7,15 @@ export default function ProjectManagmentIntro() {
             In any Andamio Project Contribution Management instance, there are three <span className="font-bold text-primary">roles</span>:
           </p>
           <p>
-            <span className="font-bold text-primary">Contributors</span> can commit to Projects, earn rewards and build an on-chain
+            <span className="font-bold text-primary">Contributors</span> can commit to Projects, earn rewards, and build an on-chain
             record of accomplishments.
           </p>
           <p>
-            <span className="font-bold text-primary">Admins</span> approve projects in a Treasury. Can be multi-sig. Wait until you see the Andmaio Governance Engine. Read our whitepaper and roadmap to learn more.
+            <span className="font-bold text-primary">Admins</span> set Treasury parameters and approve Projects.
           </p>
           <p>
             <span className="font-bold text-primary">Deciders</span> review evidence of contribution and approve the
-            completion of Projects. Also multi-sig. More coming soon.
+            completion of Projects.
           </p>
         </div>
         <div className="col-span-2 flex content-center justify-center bg-[url('/andamio.png')] bg-contain bg-no-repeat">
@@ -23,4 +23,3 @@ export default function ProjectManagmentIntro() {
       </div>
     );
   }
-  

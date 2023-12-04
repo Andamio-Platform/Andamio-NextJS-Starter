@@ -17,8 +17,7 @@ const EscrowInfo = async (contractToken?: string) => {
     <div className="card bg-secondary my-5 p-5 grid grid-cols-5 gap-5 content-center border border-primary">
       <div className="col-span-3 prose text-secondary-content my-auto">
         <h2 className="text-3xl pt-5 text-secondary-content">Andamio Escrow</h2>
-        <p>Escrows hold commitments and map to what we call deciders</p>
-        <p>Here is how it works</p>
+        <p>Escrow validators are used to lock the commitments made by Contributors.</p>
       </div>
       <div className="col-span-2 grid grid-cols-1 gap-1">
         {contractToken ? null : <DataBoxWide value={andamioConfig.config.escrows.length} label="Escrows" />}

@@ -13,10 +13,10 @@ const ContribRefInfo = async () => {
       <div className="col-span-3 prose text-secondary-content my-auto">
         <h2 className="text-3xl pt-5 text-secondary-content">Andamio Contributors</h2>
         <p>
-          Andamio is build to support Learners to become Contributors to organizations. When Learners complete a course (or whatever requirements set by an organization), they use their Leanrer Token and its related reputation to mint a Contributor Token.
+          Andamio is built to support Learners to become Contributors to organizations. When Learners complete a course (or any other requirements set by your organization), they use their Leanrer Token and current credentials to mint a Contributor Token.
         </p>
         <p>
-          Contributor Tokens allow people to commit to projects and earn rewards for their work.
+          Contributor Tokens allow people to commit to Projects and earn rewards for their work.
         </p>
       </div>
       <div className="col-span-2 flex flex-col gap-3">
