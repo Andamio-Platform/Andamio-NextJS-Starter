@@ -34,7 +34,7 @@ export default async function ModuleOverviewTemplate({ moduleId, children }: Tem
                 <div className="" key={page.slug}>
                   {page.type != "ModuleOverview" && (
                     <Link href={`/course/module/${selectedModuleOverview.id}/${page.slug}`}>
-                      <div className="hover:bg-info hover:text-info-content p-3 mb-5">
+                      <div className="hover:bg-info text-secondary-content p-3 mb-5">
                         <div className="mb-3 pb-1 border-b border-primary text-xl">{page.title}</div>
                         <div className="font-bold">{page.description}</div>
                         <div className="text-sm">Edited on: {page.lastEdited}</div>
