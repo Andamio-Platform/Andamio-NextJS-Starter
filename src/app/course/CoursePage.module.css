@@ -9,7 +9,7 @@
 }
 
 .coursePageContainer h2 {
-  @apply text-2xl my-3 pb-3 border-b border-accent text-secondary-content tracking-wide
+  @apply text-2xl mt-5 mb-3 pb-3 border-b border-accent text-secondary-content tracking-wide
 }
 
 .coursePageContainer h3 {
@@ -17,7 +17,7 @@
 }
 
 .coursePageContainer h4 {
-  @apply text-lg my-2 text-secondary-content font-bold tracking-wide
+  @apply text-lg mt-3 mb-1 text-secondary-content font-bold tracking-wide
 }
 
 .coursePageContainer p {
@@ -25,11 +25,11 @@
 }
 
 .coursePageContainer ul {
-  @apply py-3 text-secondary-content pl-2 ml-2 list-disc
+  @apply py-1 text-secondary-content pl-2 ml-2 list-disc
 }
 
 .coursePageContainer ol {
-  @apply py-3 text-secondary-content pl-2 ml-2 list-decimal
+  @apply py-1 text-secondary-content pl-2 ml-2 list-decimal
 }
 
 .coursePageContainer li {
@@ -37,7 +37,7 @@
 }
 
 .coursePageContainer a {
-  @apply font-bold hover:text-blue-800
+  @apply font-semibold text-blue-800 hover:text-blue-700
 }
 
 .coursePageContainer table {
@@ -50,6 +50,14 @@
 
 .coursePageContainer td {
   @apply border border-accent p-2
+}
+
+.coursePageContainer code {
+  @apply p-[1px] bg-primary text-primary-content rounded-sm
+}
+
+.coursePageContainer blockquote {
+  @apply bg-gray-300 p-3 border-l-[15px] border-info
 }
 
 .coursePageContainer .slt {
