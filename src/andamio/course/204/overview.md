@@ -1,11 +1,19 @@
 ---
 {
-  "title": "",
+  "title": "Module 204 Overview",
   "slt": [""],
-  "type": "Overview",
-  "description": "",
+  "type": "ModuleOverview",
+  "description": "Smart Contract Interactions",
   "videoURL": "",
   "lastEdited": "",
   "author": ""
 }
 ---
+
+```json
+{
+    "id": "204",
+    "title": "Smart Contract Interactions",
+    "slts": []
+},
+```

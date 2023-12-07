@@ -3,7 +3,7 @@
   "title": "Browser Wallet Integration",
   "slt": ["101.1", "101.2", "101.3"],
   "type": "Assignment",
-  "description": "",
+  "description": "Submit a Git Pull Request",
   "videoURL": "",
   "lastEdited": "",
   "author": ""
