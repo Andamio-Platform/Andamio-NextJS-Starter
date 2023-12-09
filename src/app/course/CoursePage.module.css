@@ -37,7 +37,7 @@
 }
 
 .coursePageContainer a {
-  @apply font-bold hover:text-blue-800
+  @apply font-bold text-blue-900 hover:text-blue-700
 }
 
 .coursePageContainer table {

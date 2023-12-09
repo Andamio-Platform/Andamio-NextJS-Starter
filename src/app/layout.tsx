@@ -23,8 +23,8 @@ const source_code_pro = Source_Code_Pro({
 });
 
 export const metadata: Metadata = {
-  title: "Andamio",
-  description: "Welcome to Andamio",
+  title: "Mesh PBL",
+  description: "A Project-Based Leearning course about the Mesh SDK",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
