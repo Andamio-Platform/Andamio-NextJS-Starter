@@ -20,6 +20,30 @@ export default cache(async function ContributorPlatform() {
     <main className="grid grid-cols-4 p-5">
       <div className="col-span-1">
         <DocumentationLinks />
+        <>
+          {process.env.NEXT_PUBLIC_EXPERIMENTAL_FEATURES?.split(",").includes(
+            "kanbanboard"
+          ) && (
+            <div className="mb-3 card bg-primary text-primary-content p-10 w-full mx-auto font-mono grid grid-cols-1">
+              <div className="col-span-1">
+                <h1 className="pb-5 text-2xl">
+                  Kanban Board &lt;experimental&gt;
+                </h1>
+              </div>
+              <div className="col-span-1">
+                <header className="text-xl text-info py-2">
+                  Test this out
+                </header>
+                <ul className="text-sm uppercase">
+                  <li className="py-1">
+                    <Link href="/contributor-platform/kanban-board">Link</Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          )}
+        </>
+
         <ProjectTransactionsEndpointList />
       </div>
       <div className="col-span-3 ml-5">

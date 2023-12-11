@@ -17,6 +17,7 @@ const AddNewProject = (props: { closeModal: () => void }) => {
     expirationTime: 0,
     lovelaceAmount: 0,
     projectTokenAmount: 0,
+    notionLink: "",
   });
 
   const handleInputChange = (
@@ -60,15 +61,28 @@ const AddNewProject = (props: { closeModal: () => void }) => {
   const { wallet, connected } = useWallet();
   if (connected) {
     const handleClick = async () => {
-      project = formData;
+      const { notionLink, ...project } = formData;
       console.log(JSON.stringify(project, null, 4));
       try {
-        const MANAGE_ADD_PROJECT_TX = await prepareAddNewProjectTx(
-          wallet,
-          project,
-          andamioConfig
-        );
-        const res = await MANAGE_ADD_PROJECT_TX.runTx();
+        let res;
+        if (notionLink !== "") {
+          console.log('has link')
+          const MANAGE_ADD_PROJECT_TX = await prepareAddNewProjectTx(
+            wallet,
+            project,
+            andamioConfig,
+            notionLink
+          );
+          res = await MANAGE_ADD_PROJECT_TX.runTx();
+        } else {
+          console.log('no link')
+          const MANAGE_ADD_PROJECT_TX = await prepareAddNewProjectTx(
+            wallet,
+            project,
+            andamioConfig
+          );
+          res = await MANAGE_ADD_PROJECT_TX.runTx();
+        }
         setTxHash(res);
       } catch (error) {
         if (error instanceof Error) {
@@ -111,7 +125,8 @@ const AddNewProject = (props: { closeModal: () => void }) => {
                           <option
                             key={escrow.contractTokenName}
                             value={
-                              andamioConfig.config.projectManagementTokens.contractTokenPolicyID +
+                              andamioConfig.config.projectManagementTokens
+                                .contractTokenPolicyID +
                               escrow.contractTokenName
                             }
                           >
@@ -161,6 +176,17 @@ const AddNewProject = (props: { closeModal: () => void }) => {
                     <input
                       type="number"
                       name="projectTokenAmount"
+                      onChange={handleInputChange}
+                      className="bg-slate-700 p-2 rounded-md font-extrabold"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Notion Link optional:</td>
+                  <td className="p-4">
+                    <input
+                      type="text"
+                      name="notionLink"
                       onChange={handleInputChange}
                       className="bg-slate-700 p-2 rounded-md font-extrabold"
                     />
