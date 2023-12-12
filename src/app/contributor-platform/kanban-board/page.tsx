@@ -15,6 +15,8 @@ import DistributeModal from "../../../components/modals/projects/DistributeModal
 import ManageAddProjectModal from "../../../components/modals/projects/ManageAddProjectModal";
 import { redirect } from "next/navigation";
 
+export const dynamic = "force-dynamic";
+
 async function getNotionLink(
   project: ProjectData
 ): Promise<{ project: ProjectData; notionLink: string }> {
