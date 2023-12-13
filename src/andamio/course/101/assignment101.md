@@ -14,4 +14,10 @@
 - Mini project: Build your own wallet connect UI component
 
 ## Proof:
-- could be a git event...
+Students will submit a pull request to a Mesh repo.
+
+## Easier Task:
+- Build an Asset List component
+
+## Challenging Task:
+- Build your connect wallet component

@@ -6,7 +6,7 @@
     "modules": [
         {
             "id": "100",
-            "title": "Getting Started With MeshJS",
+            "title": "MeshJS Prerequisites",
             "slts": [
                 {
                     "id": "100.1",
@@ -19,27 +19,27 @@
                 {
                     "id": "100.3",
                     "slt": "I am familiar with some essentials of the React framework, like components, props, and hooks."
-                },
-                {
-                    "id": "100.4",
-                    "slt": "I can integrate Mesh into a new Project."
                 }
             ]
         },
         {
             "id": "101",
-            "title": "Browser Wallet Integration",
+            "title": "Getting Started: Connect a Wallet to Mesh",
             "slts": [
                 {
                     "id": "101.1",
-                    "slt": "I can use Mesh to connect a CIP-30 compliant wallet to a decentralized application."
+                    "slt": "I can integrate Mesh into a new Project."
                 },
                 {
                     "id": "101.2",
-                    "slt": "I can see information about my wallet in my web browser."
+                    "slt": "I can use Mesh to connect a CIP-30 compliant wallet to a decentralized application."
                 },
                 {
                     "id": "101.3",
+                    "slt": "I can see information about my wallet in my web browser."
+                },
+                {
+                    "id": "101.4",
                     "slt": "I can build a component that lists the assets in my browser wallet."
                 }
             ]

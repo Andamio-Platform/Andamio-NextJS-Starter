@@ -10,12 +10,6 @@
 }
 ---
 
-## Mini Project:
-Do this -- https://meshjs.dev/guides/nextjs -- we'll be using NextJS as the example in this course.
-
-
-
-## Hints, Clues, other Stuff...
-If you want to use another framework, you can follow the mini-guides here: https://meshjs.dev/migration-manual-installation
-
-Helpful stuff to know: Markdown, Git (more on these later)
+## Quick Assignment
+- Commit to this assignment just to see how it works.
+- Let us know if you feel good about pre-reqs
