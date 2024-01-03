@@ -24,8 +24,8 @@ const Commit = (props: {
       try {
         const COMMIT_TX = await prepareCommitTx(
           wallet,
-          props.selectedProject,
-          andamioConfig
+          andamioConfig,
+          props.selectedProject
         );
         const res = await COMMIT_TX.runTx();
         setTxHash(res);
