@@ -10,7 +10,7 @@
 }
 ---
 
-### Welcome to Mesh Project-Based Learning! 
+### Welcome to Mesh Project-Based Learning!
 
 In this course, you will learn how to use the Mesh SDK to build applications on Cardano. The purpose of this module is to help you get started using Mesh.
 
@@ -22,4 +22,5 @@ In the first two lessons, we will cover two prerequisites:
 ### React Essentials
 The Mesh SDK is written in [TypeScript](https://www.typescriptlang.org/), and can be used in any application written in JavaScript or TypeScript. In this course, we will build some front-end examples in [React](https://react.dev/). While React is not required to use Mesh, if you want to follow along with every example, there are a few React patterns that you'll want to be familiar with. These essentials are covered in [Lesson 100.3](/course/module/100/1003).
 
-Finally, in [Lesson 100.4](/course/module/100/1004), you will integrate Mesh into a React application. If you are familiar with React and the prerequisites, you can [jump straight into Lesson 100.4](/course/module/100/1004).
+### Learning in Andamio
+If you are familiar with React and the prerequisites, you can [jump straight into the Assignment for this Module](/course/module/100/assignment100).
