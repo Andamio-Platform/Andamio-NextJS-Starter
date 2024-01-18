@@ -9,3 +9,5 @@
   "author": ""
 }
 ---
+
+In this module, you will learn how to integrate Mesh into a web application built on [React](https://react.dev/). We will use the [NextJS Framework](https://nextjs.org/). React and NextJS are not required for using Mesh, but they are popular frameworks and helpful for introducing what Mesh can do. Later in this course, we will look at ways to use Mesh without using any particular app framework.
