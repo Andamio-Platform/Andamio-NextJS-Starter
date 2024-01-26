@@ -24,7 +24,7 @@
         },
         {
             "id": "101",
-            "title": "Getting Started: Connect a Wallet to Mesh",
+            "title": "Getting Started With MeshJS",
             "slts": [
                 {
                     "id": "101.1",
@@ -40,37 +40,25 @@
                 },
                 {
                     "id": "101.4",
-                    "slt": "I can build a component that lists the assets in my browser wallet."
+                    "slt": "I can use Mesh React hooks."
                 }
             ]
         },
         {
             "id": "102",
-            "title": "Mesh React",
+            "title": "Mesh Design Patterns",
             "slts": [
                 {
                     "id": "102.1",
-                    "slt": "I can set up Mesh Provider so that I can use Mesh React Components and Hooks."
+                    "slt": "I can use a Mesh Provider to get information about the blockchain."
                 },
                 {
                     "id": "102.2",
-                    "slt": "I can connect or disconnect wallet using useWallet hook."
+                    "slt": "I can use Mesh Resolvers to convert data so that it is useful in application."
                 },
                 {
                     "id": "102.3",
-                    "slt": "I can get the connected wallet address using useAddress hook."
-                },
-                {
-                    "id": "102.4",
-                    "slt": "I can get a list of assets or tokens in connected wallets using useAssets hook."
-                },
-                {
-                    "id": "102.5",
-                    "slt": "I can get information regarding the amount of ADA in lovelace in the connected wallet using useLovelace hook."
-                },
-                {
-                    "id": "102.6",
-                    "slt": "I can get information about the connected wallet network using useNetwork hook."
+                    "slt": "I can design an application on Cardano by understanding what Mesh does and does not do."
                 }
             ]
         },
