@@ -10,37 +10,38 @@
 }
 ---
 
-"I can build a component using Mesh React hooks...."
-"I can build a component that lists the assets in my browser wallet."
-
 ## Assignment Description
 In this Assignment, you will build your own UI component and add it the Mesh PBL Student Library.
 
-## Submitting Evidencef:
-Students will submit a pull request to a Mesh repo.
-
+## Introduction to Course Assignments
+- Submission
 > About "Important Stuff", "Neat Stuff" and "Tough Stuff".
+
+
+## Submitting Evidence:
+Students will submit a pull request to a Mesh repo.
 
 ## Important Stuff: Viewing Assets
 - Build and style an Asset List component
 - Should we say that we are using Tailwind CSS in this course?
+- This example is covered in the docs below.
 
 ## Neat Stuff: Conditional Rendering
 - Build a component that displays different content if the connected wallet holds a certain asset.
+- See Lesson 101.4 for a basic example...
 
 ## Tough Stuff: Wallet Connect
 - Build your connect wallet component
+- No help is provided, but this challenge will allow you to show what you know.
 
 
-
-
-
-# Possible Notes:
+# Assignment Details
 > Review with Mesh PBL Team
 
-In the previous lesson, you created a component that displays the assets in a connected wallet, but it doesn't look very good!
+In this module, you learned how to start a project with Mesh, you created a very basic component, and you learned about Mesh Wallet Hooks. However, you have not yet built a helpful user interface. Now your assignment is to create a component that displays information in a helpful and informative way.
 
-In this lesson, let's style the component a bit.
+The challenge level of this assignment depends on your background as a developer.
+
 
 ## Step By Step
 
