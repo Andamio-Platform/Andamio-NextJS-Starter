@@ -5,15 +5,15 @@
 }
 
 .coursePageContainer h1 {
-  @apply text-3xl my-5 font-bold text-secondary-content
+  @apply text-4xl my-5 pt-5 font-bold text-secondary-content border-t border-primary
 }
 
 .coursePageContainer h2 {
-  @apply text-3xl my-5 pt-3 border-t border-accent text-secondary-content tracking-wide w-2/3
+  @apply text-3xl my-5 text-secondary-content underline
 }
 
 .coursePageContainer h3 {
-  @apply text-2xl my-2 text-secondary-content tracking-wide
+  @apply text-2xl my-2 text-secondary-content
 }
 
 .coursePageContainer h4 {
