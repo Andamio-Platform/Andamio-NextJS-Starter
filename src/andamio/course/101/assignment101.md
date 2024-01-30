@@ -1,6 +1,6 @@
 ---
 {
-  "title": "Browser Wallet Integration",
+  "title": "Build an App Component",
   "slt": ["101.1", "101.2", "101.3", "101.4"],
   "type": "Assignment",
   "description": "Submit a Git Pull Request",
@@ -10,45 +10,51 @@
 }
 ---
 
-## Assignment Description
-In this Assignment, you will build your own UI component and add it the Mesh PBL Student Library.
+## Assignment Overview
+In this Assignment, you will build your own UI component and add it to the [Mesh PBL Student Library]().
 
 ## Introduction to Course Assignments
-- Submission
-> About "Important Stuff", "Neat Stuff" and "Tough Stuff".
+### In Mesh PBL, each Module ends with an Assignment. 
+Here are a few things you should know:
+1. Assignments consist of one or more Projects 
+2. Projects have two purposes. One is to give you hands-on experience with the learning targets. The other is to give you a chance to demonstrate what you have learned.
+3. Projects are Categorized as "Important Stuff", "Neat Stuff" and "Tough Stuff".
 
+### Important Stuff, Neat Stuff and Tough Stuff
+- **Important Stuff is required.** Think of it as minimum proof that you completed the Module.
+- **Neat Stuff is optional.** We recommend trying these projects so that you can learn more.
+- **Tough Stuff is a challenge.** We'll be impressed if you can do this project -- and excited to collaborate with you!
 
 ## Submitting Evidence:
-Students will submit a pull request to a Mesh repo.
+Evidence of your progress will be posted on both GitHub and the Cardano blockchain.
+- At the end of this Assignment, you will submit a pull request to the [Mesh PBL Student Library](). It is a repository on GitHub. You will need a GitHub account in order to complete this course.
+- After you submit a Pull Request, you will submit on-chain evidence that you've completed the Assignment.
 
-## Important Stuff: Viewing Assets
+## Let's Jump In!
+
+### Important Stuff: Viewing Assets
 - Build and style an Asset List component
-- Should we say that we are using Tailwind CSS in this course?
-- This example is covered in the docs below.
+- You can use any styling library you want, or pure CSS. 
+- In the documentation below, there is a guide to this project.
 
-## Neat Stuff: Conditional Rendering
+### Neat Stuff: Conditional Rendering
+- You can change how a page renders based on whether or not specific assets are held in the connected wallet.
 - Build a component that displays different content if the connected wallet holds a certain asset.
-- See Lesson 101.4 for a basic example...
+- For hints on how to do this, review the examples in [Lesson 101.4](/course/module/101/1014)
 
-## Tough Stuff: Wallet Connect
-- Build your connect wallet component
+### Tough Stuff: Wallet Connect
+- Build your connect wallet component.
 - No help is provided, but this challenge will allow you to show what you know.
 
 
-# Assignment Details
-> Review with Mesh PBL Team
+## Assignment Details: Step-by-Step
 
 In this module, you learned how to start a project with Mesh, you created a very basic component, and you learned about Mesh Wallet Hooks. However, you have not yet built a helpful user interface. Now your assignment is to create a component that displays information in a helpful and informative way.
-
-The challenge level of this assignment depends on your background as a developer.
-
-
-## Step By Step
 
 ### Step 1: Create a New Page
 In the `/src/pages` directory, make a new file named `assets.tsx`.
 
-### Step 2: Import MyWalletAssetComponent
+### Step 2: Import AssetList
 Copy the following code into `assets.tsx`:
 ```typescript
 import Head from "next/head";
@@ -87,8 +93,7 @@ export default function AssetPage() {
 }
 ```
 
-
-### Step 3: Add Styles to MyWalletAssetComponent
+### Step 3: Remove Built-In Styles
 In this template, we are using a stylesheet provided by Mesh:
 ```html
 <link href="https://meshjs.dev/css/template.css" rel="stylesheet" key="mesh-demo" />
@@ -96,14 +101,7 @@ In this template, we are using a stylesheet provided by Mesh:
 
 Delete this line of code. What happens?
 
-### Step 4: Add Styles with TailwindCSS
-- Team - what do you think? Teach how to install Tailwind here, or simply use a new stylesheet?
-
-
-## You Will Know You Are Successful If
-- Depends on what we decide for Step 4.
-
-## Notes + Next Steps
-- In Module 102 we will investigate each of the Mesh React hooks.
-- You can create components using these hooks
-- In Assignment 101, you will add a component to the Mesh PBL Student Library.
+### Step 4: Add Your Own Styles
+- Tailwind CSS is built into the [Mesh PBL Student Library]().
+- You can use your own custom CSS.
+- If you'd prefer to use a different styling framework, [let us know]()!

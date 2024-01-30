@@ -9,11 +9,11 @@
 }
 
 .coursePageContainer h2 {
-  @apply text-2xl mt-5 mb-3 pb-3 border-b border-accent text-secondary-content tracking-wide
+  @apply text-3xl my-5 pt-3 border-t border-accent text-secondary-content tracking-wide w-2/3
 }
 
 .coursePageContainer h3 {
-  @apply text-xl my-2 text-secondary-content tracking-wide
+  @apply text-2xl my-2 text-secondary-content tracking-wide
 }
 
 .coursePageContainer h4 {
