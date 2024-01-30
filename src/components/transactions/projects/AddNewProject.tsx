@@ -69,8 +69,8 @@ const AddNewProject = (props: { closeModal: () => void }) => {
           console.log('has link')
           const MANAGE_ADD_PROJECT_TX = await prepareAddNewProjectTx(
             wallet,
-            project,
             andamioConfig,
+            project,
             notionLink
           );
           res = await MANAGE_ADD_PROJECT_TX.runTx();
@@ -78,8 +78,8 @@ const AddNewProject = (props: { closeModal: () => void }) => {
           console.log('no link')
           const MANAGE_ADD_PROJECT_TX = await prepareAddNewProjectTx(
             wallet,
-            project,
-            andamioConfig
+            andamioConfig,
+            project
           );
           res = await MANAGE_ADD_PROJECT_TX.runTx();
         }
