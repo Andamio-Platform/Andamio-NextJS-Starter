@@ -1,13 +1,13 @@
 ---
 {
-  "title": "Introducing Mesh React",
-  "slt": ["102.1", "102.2", "102.3","102.4", "102.5", "102.6"],
+  "title": "Add Title",
+  "slt": ["102.1", "102.2", "102.3"],
   "type": "ModuleOverview",
   "description": "",
   "videoURL": "",
   "lastEdited": "",
-  "author": ""
+  "author": "Draft: James; Review: "
 }
 ---
 
-- Mini project: Build an Asset Gallery
+# Intro to Module 102

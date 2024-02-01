@@ -1,13 +1,16 @@
 ---
 {
-  "title": "Introducing Mesh React",
-  "slt": ["102.1", "102.2", "102.3","102.4", "102.5", "102.6"],
+  "title": "Mesh Design Patters...",
+  "slt": ["102.1", "102.2", "102.3"],
   "type": "Assignment",
   "description": "",
   "videoURL": "",
   "lastEdited": "",
-  "author": ""
+  "author": "Team brainstorm -- can align in Discord"
 }
 ---
 
-- Mini project: Build an Asset Gallery
+
+Important Stuff
+Neat Stuff
+Tough Stuff
