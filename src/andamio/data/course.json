@@ -63,39 +63,124 @@
             ]
         },
         {
+            "id": "200",
+            "title": "Building Transactions with Mesh",
+            "slts": [
+                {
+                    "id": "200.1",
+                    "slt": "I can set up Mesh Provider so that I can use Mesh React Components and Hooks."
+                },
+                {
+                    "id": "200.1",
+                    "slt": "I can set up Mesh Provider so that I can use Mesh React Components and Hooks."
+                }
+            ]
+        },
+        {
             "id": "201",
-            "title": "Transactions",
-            "slts": []
+            "title": "Transactions Instance",
+            "slts": [
+                {
+                    "id": "201.1",
+                    "slt": "Minting"
+                },
+                {
+                    "id": "201.2",
+                    "slt": "Multi-Sig"
+                },
+                {
+                    "id": "201.3",
+                    "slt": "Smart Contract Interactions"
+                },
+                {
+                    "id": "201.4",
+                    "slt": "Staking"
+                },
+                {
+                    "id": "201.5",
+                    "slt": "Wallet Verification and Message Signing"
+                }
+            ]
         },
         {
             "id": "202",
-            "title": "Minting",
-            "slts": []
+            "title": "Mesh Lower Level APIs - MeshTxBuilder",
+            "slts": [
+                {
+                    "id": "201.1",
+                    "slt": "I can send ADA to myself"
+                },
+                {
+                    "id": "201.2",
+                    "slt": "I can send value to a script with inline datum attached"
+                },
+                {
+                    "id": "201.3",
+                    "slt": "I can unlock fund from a validator"
+                },
+                {
+                    "id": "201.4",
+                    "slt": "I can mint a smart contract native token"
+                },
+                {
+                    "id": "201.4",
+                    "slt": "I can unlock fund from a script while minting a smart contract native token at the same time"
+                },
+                {
+                    "id": "201.5",
+                    "slt": "I can build a transaction by providing an object of specification of transaction"
+                }
+            ]
         },
         {
             "id": "203",
-            "title": "Multi-Sig",
-            "slts": []
+            "title": "Mesh for application backend",
+            "slts": [
+                {
+                    "id": "203.1",
+                    "slt": "I can set up App Wallet instance"
+                },
+                {
+                    "id": "203.2",
+                    "slt": "I can perform automatic transaction building, signing and submission"
+                },
+                {
+                    "id": "203.3",
+                    "slt": "I can return partially signed transaction to frontend for multi-sig"
+                }
+            ]
         },
         {
             "id": "204",
-            "title": "Smart Contract Interactions",
-            "slts": []
+            "title": "Advance Topics",
+            "slts": [
+                {
+                    "id": "204.1",
+                    "slt": "I can get parameterized scripts for transaction dynamically at transaction building."
+                }
+            ]
         },
         {
-            "id": "205",
-            "title": "Staking",
-            "slts": []
-        },
-        {
-            "id": "206",
-            "title": "Wallet Verification and Message Signing",
-            "slts": []
-        },
-        {
-            "id": "207",
-            "title": "App Wallet",
-            "slts": []
+            "id": "300",
+            "title": "Contributing to Mesh",
+            "slts": [
+                {
+                    "id": "300.1",
+                    "slt": "I can navigate the source code repository for debugging."
+                },
+                {
+                    "id": "300.2",
+                    "slt": "I can describe precisely what error I am facing with Mesh with ways to reproduce."
+                },
+                {
+                    "id": "300.3",
+                    "slt": "I can add on the existing issue / create a new issue on Github for potential bugs."
+                },
+                {
+                    "id": "300.4",
+                    "slt": "I can fork Mesh's repository and create pull request for potential improvements or fixes."
+                }
+            ]
         }
     ]
 }
