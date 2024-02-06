@@ -64,7 +64,7 @@
         },
         {
             "id": "200",
-            "title": "Building Transactions with Mesh",
+            "title": "Building Transactions with Mesh - Concepts",
             "slts": [
                 {
                     "id": "200.1",
@@ -72,17 +72,21 @@
                 },
                 {
                     "id": "200.2",
-                    "slt": "I can tell when a transaction is valid, when is not."
+                    "slt": "I understand the the roles of different components in the context of a transaction."
                 },
                 {
                     "id": "200.3",
-                    "slt": "I understand the the roles of different components in a transaction."
+                    "slt": "I can tell when a transaction is valid from transaction context."
+                },
+                {
+                    "id": "200.4",
+                    "slt": "I understand the protocol limitation and and data format restriction in transaction building."
                 }
             ]
         },
         {
             "id": "201",
-            "title": "Transactions Instance",
+            "title": "Building Transactions with Transactions Instance",
             "slts": [
                 {
                     "id": "201.1",
@@ -108,7 +112,7 @@
         },
         {
             "id": "202",
-            "title": "Mesh Lower Level APIs - MeshTxBuilder",
+            "title": "Building Transactions with Mesh Lower Level APIs - MeshTxBuilder",
             "slts": [
                 {
                     "id": "201.1",
@@ -138,7 +142,7 @@
         },
         {
             "id": "203",
-            "title": "Mesh for application backend",
+            "title": "Mesh for Application Backend",
             "slts": [
                 {
                     "id": "203.1",
