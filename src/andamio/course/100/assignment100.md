@@ -14,7 +14,7 @@ This course is build in [Andamio](https://andamio.io). As you work through the c
 
 The purpose of this Assignment is to show you how it works.
 
-## Step By Step:
+## Step By Step
 
 ### Step 1: Mint a Learner Token
 
@@ -27,7 +27,7 @@ The purpose of this Assignment is to show you how it works.
 3. Press the **Commit to Assignment** above!
 4. You will be prompted to enter some **Assignment Info**. For now, you can just write a short message. Later in this course, you will learn more about how Assignment evidence works.
 
-## You will know you are successful if:
+## You will know you are successful if
 
 1. Your Learner Token is no longer in your wallet.
 2. You can see the transaction you just sent in your transaction history.
