@@ -6,7 +6,7 @@
   "description": "Browser Wallet Integration",
   "videoURL": "",
   "lastEdited": "2024-02-06",
-  "author": "James Dunseith",
+  "author": "James",
 }
 ---
 
