@@ -29,42 +29,132 @@
           "slt": "I can write Lessons with Markdown."
         },
         {
-          "id": "102.2",
-          "slt": "I can add changes to a public repository."
-        }
-      ]
-    },
-    {
-      "id": "201",
-      "title": "Make as many Modules as you need.",
-      "slts": [
-        {
-          "id": "201.1",
-          "slt": "I can write a Student Learning Target (SLT)."
+            "id": "200",
+            "title": "Building Transactions with Mesh - Concepts",
+            "slts": [
+                {
+                    "id": "200.1",
+                    "slt": "I can explain what a Cardano transaction is and how much off-chain code can control."
+                },
+                {
+                    "id": "200.2",
+                    "slt": "I understand the the roles of different components in the context of a transaction."
+                },
+                {
+                    "id": "200.3",
+                    "slt": "I can tell when a transaction is valid from transaction context."
+                },
+                {
+                    "id": "200.4",
+                    "slt": "I understand the protocol limitation and and data format restriction in transaction building."
+                }
+            ]
         },
         {
-          "id": "201.2",
-          "slt": "I can write another SLT."
+            "id": "201",
+            "title": "Building Transactions with Transactions Instance",
+            "slts": [
+                {
+                    "id": "201.1",
+                    "slt": "I can mint a native token, on both native script and plutus script."
+                },
+                {
+                    "id": "201.2",
+                    "slt": "I can build a valid transaction with more than one wallet signing against."
+                },
+                {
+                    "id": "201.3",
+                    "slt": "I can lock fund and unlock fund from a smart contract validator address"
+                },
+                {
+                    "id": "201.4",
+                    "slt": "I can build a component to allow wallet stakes to a particular pool"
+                },
+                {
+                    "id": "201.5",
+                    "slt": "I can write a component to verify message by signing against it"
+                }
+            ]
         },
         {
-          "id": "201.3",
-          "slt": "I can write as many SLTs as needed, for as many Modules as my Course requires."
-        }
-      ]
-    },
-    {
-      "id": "301",
-      "title": "Another Module",
-      "slts": [
-        {
-          "id": "301.1",
-          "slt": "I can create additional course modules."
+            "id": "202",
+            "title": "Building Transactions with Mesh Lower Level APIs - MeshTxBuilder",
+            "slts": [
+                {
+                    "id": "202.1",
+                    "slt": "I can send ADA to myself"
+                },
+                {
+                    "id": "202.2",
+                    "slt": "I can send value to a script with inline datum attached"
+                },
+                {
+                    "id": "202.3",
+                    "slt": "I can unlock fund from a validator"
+                },
+                {
+                    "id": "202.4",
+                    "slt": "I can mint a smart contract native token"
+                },
+                {
+                    "id": "202.4",
+                    "slt": "I can unlock fund from a script while minting a smart contract native token at the same time"
+                },
+                {
+                    "id": "202.5",
+                    "slt": "I can build a transaction by providing an object of specification of transaction"
+                }
+            ]
         },
         {
-          "id": "301.2",
-          "slt": "I can use Module IDs to sequence course modules."
+            "id": "203",
+            "title": "Mesh for Application Backend",
+            "slts": [
+                {
+                    "id": "203.1",
+                    "slt": "I can set up App Wallet instance"
+                },
+                {
+                    "id": "203.2",
+                    "slt": "I can perform automatic transaction building, signing and submission"
+                },
+                {
+                    "id": "203.3",
+                    "slt": "I can return partially signed transaction to frontend for multi-sig"
+                }
+            ]
+        },
+        {
+            "id": "204",
+            "title": "Advance Topics",
+            "slts": [
+                {
+                    "id": "204.1",
+                    "slt": "I can get parameterized scripts for transaction dynamically at transaction building."
+                }
+            ]
+        },
+        {
+            "id": "300",
+            "title": "Contributing to Mesh",
+            "slts": [
+                {
+                    "id": "300.1",
+                    "slt": "I can navigate the source code repository for debugging."
+                },
+                {
+                    "id": "300.2",
+                    "slt": "I can describe precisely what error I am facing with Mesh with ways to reproduce."
+                },
+                {
+                    "id": "300.3",
+                    "slt": "I can add on the existing issue / create a new issue on Github for potential bugs."
+                },
+                {
+                    "id": "300.4",
+                    "slt": "I can fork Mesh's repository and create pull request for potential improvements or fixes."
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

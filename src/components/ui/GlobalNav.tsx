@@ -33,7 +33,7 @@ const GlobalNav = () => (
         )}
       </ul>
       <div className="ml-5">
-      <CardanoWallet />
+      <CardanoWallet isDark={true} />
 
       </div>
     </div>
