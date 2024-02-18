@@ -37,7 +37,7 @@ async function getNotionLink(
   const key = Number(bigIntValue.toString().substring(0, 10));
   console.log("this", key);
 
-  const graphql = new GraphQL();
+  const graphql = new GraphQL(andamioConfig.network);
 
   try {
     const res: any = await graphql.graphQLClient.request(
